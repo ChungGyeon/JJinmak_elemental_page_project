@@ -16,7 +16,7 @@
       <!-- 텟스트커밋   -->
 
     <title>소개팅페이지</title>
-   <!-- 찐 테스트 커밋 -->
+   <!-- 뭔가 이상하지만 일단 -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
