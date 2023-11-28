@@ -1,14 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="utf-8"%>
+    
 <!DOCTYPE html>
 <html>
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head>
+  <script src="../assets/js/color-modes.js"></script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.115.4">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- 텟스트커밋   -->
+
     <title>소개팅페이지</title>
-   
+   <!-- 찐 테스트 커밋 -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -126,7 +134,6 @@
     </div>
 
     
-
 <main>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -136,28 +143,34 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://img.freepik.com/free-photo/beautiful-tropical-beach-and-sea-with-chair-on-blue-sky_74190-7488.jpg?size=626&ext=jpg&ga=GA1.1.2042859510.1700204261&semt=sph" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            <img style="width: 100vh;" src="/img/seou.avif" alt=""></a>
-        </svg>
-        <div class="carousel-caption text-end" style="margin-top: 50px;">
-            <a class="d-flex justify-content-center">
-            <p style="text-align: center;">?</p>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
+        <a href="http://localhost:8080/JSPBOOK_C/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+        </a></svg>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <img style="width: 550px; loading:lazy;" alt=""  src="">
+
+            <p class="opacity-75">여의도 더 현대 서울에서 느낄 수 있는 크리스마스 분위기</p>
           </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img " width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="carousel-caption text-end" style="margin-top: 50px;">
-            <a class="d-flex justify-content-center">
-            <img style="width: 100vh;" src="https://img.freepik.com/free-photo/side-view-partners-holding-hands_23-2149523772.jpg?size=626&ext=jpg&ga=GA1.1.2042859510.1700204261&semt=sph" alt=""></a>
-            <p style="text-align: center;"></p>
-          </div>
+        </div>
       </div>
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-          <div class="carousel-caption text-end" style="margin-top: 50px;">
-            <a class="d-flex justify-content-center">
-            <img style="width: 100vh;" src="https://img.freepik.com/free-photo/haedong-yonggungsa-temple-and-haeundae-sea-in-busan-buddhist-temple-in-busan-south-korea_335224-436.jpg?size=626&ext=jpg&ga=GA1.1.2042859510.1700204261&semt=sph" alt=""></a>
-            <p style="text-align: center;">부산 해운대 용궁사</p>
+        <div class="container">
+          <div class="carousel-caption">
+            
+
+            <p>설명2</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            
+            <p>설명3</p>
           </div>
         </div>
       </div>
@@ -166,182 +179,49 @@
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next d-flex align-items-center" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+ 
+  <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-primary" onClick="location.href='findprofile.jsp'">사람을 찾으러 떠나볼까요?</button></div>
 <!-- Three columns of text below the carousel -->
+ <hr class="featurette-divider">
+
 <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-6" style="text-align: center;">
-        <img class="img-thumbnail" style="border-radius: 50px;" alt="" src="https://t1.daumcdn.net/cfile/tistory/2513B53E55DB206927">
-      	<h2 class="fw-normal">Heading</h2>
-        <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">상세정보</button>
+      <div class="col-lg-3">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        <image href="LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <h2 class="fw-normal">임재혁</h2>
+        <p>01 솔로라이더</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil1">자세히
+        </button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3 col-md-6" style="text-align: center;">
-        <img class="img-thumbnail" style="border-radius: 50px;" alt="" src="https://t1.daumcdn.net/cfile/tistory/2513B53E55DB206927">
-      	<h2 class="fw-normal">Heading</h2>
+      <div class="col-lg-3">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        <image href="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjVfNzQg/MDAxNTQwNDcyNDY0MjU5.ObVghi3tzyF_ilwHeVO4qs0KXooGgqNmztkQtOkm8VEg.ynHbfUA-NwU11LdesL0jV66haI71WMjdSTjRM275UBQg.JPEG.jnway37/8--.jpg?type=w800" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <h2 class="fw-normal">김의연</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">상세정보</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil2">여기가 모달</button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3 col-md-6" style="text-align: center;">
-      	<img class="img-thumbnail" style="border-radius: 50px;" alt="" src="https://t1.daumcdn.net/cfile/tistory/2513B53E55DB206927">
-      	<h2 class="fw-normal">전관호</h2>
-        <p>안녕하세요!</p>
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">상세정보</button>
-      </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3 col-md-6" style="text-align: center;">
-        <img class="img-thumbnail" style="border-radius: 50px;" alt="" src="https://t1.daumcdn.net/cfile/tistory/2513B53E55DB206927">
-      	<h2 class="fw-normal">Heading</h2>
+      <div class="col-lg-3">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        <image href="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <h2 class="fw-normal">전관호</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">상세정보</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil3">여기가 모달</button>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-3">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        <image href="https://www.behindpress.com/news/photo/202206/18712_31439_187.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <h2 class="fw-normal">최우민</h2>
+        <p>한줄소개</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil4">여기가 모달</button>
       </div><!-- /.col-lg-3 -->
     </div><!-- /.row -->
-	
-	
-	<!-- Modal 1 -->
-	<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title1</h1>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-			<!-- Modal 2 -->
-	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title2</h1>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-			<!-- Modal 3 -->
-			<div class="modal fade" id="exampleModal3" tabindex="-1"
-				aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h1 class="modal-title fs-5" id="exampleModalLabel">전과호님 프로필</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-
-							<table style="background-color: #fff; width: 100%; border: 2px solid #264de4;"
-								data-dark-style="background-color:#1f2023;">
-								<tbody>
-									<tr>
-										<td colspan="2" style="color: #fff; background-color: #264de4; text-align: center;">
-										<div>
-										 <span><strong>전관호</strong></span><br>JeonGwanho
-										</div>
-										</td>
-									</tr>
-									<tr>
-										<td colspan="2" style="text-align: center;">
-										<div>
-											<div style="margin: 5%">
-												<span style="width: 70%;">
-												<span style="width: 100%;">
-												<img width="100%" src="https://t1.daumcdn.net/cfile/tistory/2513B53E55DB206927" loading="lazy">
-											</span></span>
-											</div>
-										</div>
-										</td>
-									</tr>
-									<hr>
-									<tr>
-										<td style="color: #fff; background-color: #264de4; width: 100px; text-align: center;">
-										<div>
-											<strong>이름</strong>
-										</div>
-										</td>
-										<td>
-										<div>
-											<a href="/w/W3C" title="W3C">전관호</a>
-										</div>
-										</td>
-									</tr>
-									<tr>
-										<td style="color: #fff; background-color: #264de4; text-align: center;">
-										<div>
-											<strong>생년월일</strong>
-										</div>
-										</td>
-										<td>
-										<div>
-											2001.11.09
-										</div>
-										</td>
-									</tr>
-									<tr>
-										<td style="color: #fff; background-color: #264de4; text-align: center;">
-										<div>
-											<strong>취미</strong>
-										</div>
-										</td>
-										<td>
-										<div>???</div>
-										</td>
-									</tr>
-									<tr>
-										<td style="color: #fff; background-color: #264de4; text-align: center;">
-											?
-										</td>
-										<td>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary"
-								data-bs-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Modal 4 -->
-	<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title4</h1>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
+<!--  </div>-->
 
     <!-- START THE FEATURETTES -->
 
@@ -349,37 +229,139 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1">마음에 드시는 분을 찾으세요!</h2>
+        <p class="lead">여기에 있는 모든 분은 만남을 추구하기 위해 모여있습니다. 당신을 기다리고 있어요!</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/>
+        <image href="mailpageimage1.png" width="100%" height="100%" preserveAspectRatio="xMidYMax slice"/>
+        </svg>
       </div>
     </div>
 
     <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
+   <p> 여기에 어떤 내용 넣을지 생각해보자 테스트를 위한 커
+    
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">만날 장소는 어디가 좋을까? <span class="text-body-secondary"></span></h2>
+        <p class="lead">서로의 마음을 확인한 두 분을 위해 저희가 장소를 추천해줍니다! 자신과 가까운 곳, 상대방과 가까운 곳, 아니면 서로의 중간지점에서 만날만한 멋진 장소를 알려줄게요</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500여기에 슬라이드를 넣어서 구경시켜주자</text></svg>
       </div>
     </div>
+
+
+
+
+<!-- 임재혁 전용 -->
+<div class="modal fade" id="Profil1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="LJH.jpg" alt="시메지로 임시등록" width="250" height="400">
+    
+      <div class="container text-center">
+       <h3>임재혁</h3>
+       <p><br></p>
+ 
+       <h4>01년생, 백수지망인 희망찬 친구<br></h4>
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='swipetest.jsp'">자세히(구현예정)</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 김의연 전용 -->
+<div class="modal fade" id="Profil2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjVfNzQg/MDAxNTQwNDcyNDY0MjU5.ObVghi3tzyF_ilwHeVO4qs0KXooGgqNmztkQtOkm8VEg.ynHbfUA-NwU11LdesL0jV66haI71WMjdSTjRM275UBQg.JPEG.jnway37/8--.jpg?type=w800" alt="시메지로 임시등록" width="250" height="400">
+       <div class="container text-center">
+       <h3>김의연</h3>
+       <p><br></p>
+
+       <h4>00년생, 열혈공부중<br></h4>
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 전관호 전용 -->
+<div class="modal fade" id="Profil3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" alt="시메지로 임시등록" width="250" height="400">
+       <div class="container text-center">
+       <h3>전관호</h3>
+       <p><br></p>
+
+       <h4>01년생, 지능 만렙<br></h4>
+       </div>
+       
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 최우민 전용 -->
+<div class="modal fade" id="Profil4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="https://www.behindpress.com/news/photo/202206/18712_31439_187.jpg" alt="시메지로 임시등록" width="250" height="400">
+       <div class="container text-center">
+       <h3>최우민</h3>
+       <p><br></p>
+
+       <h4>비공개, 피지컬 만렙<br></h4>
+       </div>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <hr class="featurette-divider">
   
@@ -389,7 +371,6 @@
   <!-- /.container -->
 </div>
 </main>
-	
 	<%@ include file="footer.jsp" %>
 
 </body>
