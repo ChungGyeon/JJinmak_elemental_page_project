@@ -1,14 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.115.4">
+<html lang="en">
+  <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         
         <style type="text/css">
@@ -99,6 +93,7 @@
         
     </head>
     <body>
+    
      <!-- 메뉴 시작 -->
         <!-- Responsive navbar includes-->
         
@@ -123,14 +118,16 @@
         
         
         <div class="member">
-         <form action="/memberJoin" method="post" enctype="multipart/form-data" onsubmit="return joinFormCheck(this)">
+         <form action="join_check.jsp" method="post" onsubmit="return joinFormCheck(this)">
           <h1 style="text-align: center;">회원가입</h1>
   
           <!-- 필드 -->
           <div class="field">
               <b>아이디</b>
-             <input type="text" name="mid inputId" id="inputId" <%-- onkeyup="idCheck(this)" --%> >
+             <input type="text" name="mid" id="inputId">
+             <!-- 
              <button type="button" onclick="idCheck(this)">중복확인</button> <span id="idMsg"></span>
+             -->
           </div>
           
           
@@ -142,6 +139,11 @@
           <div class="field">
               <b>이름</b>
               <input type="text" name="mname">
+          </div>
+          
+          <div class="field">
+              <b>전화번호(-없이 써주세요)</b>
+              <input type="text" name="mphone">
           </div>
   
           <!-- 이메일 -->
@@ -177,12 +179,6 @@
 		    let inputId = formObj.mid;
 		    if(inputId.value.length == 0){
 		     alert('아이디를 입력해주세요!');
-		     inputId.focus();
-		     return false;
-		    }
-		    
-		    if(!idChecked){
-		     alert('아이디를 중복확인 해주세요!');
 		     inputId.focus();
 		     return false;
 		    }
