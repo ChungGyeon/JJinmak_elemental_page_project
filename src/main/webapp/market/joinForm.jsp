@@ -16,8 +16,8 @@
          @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
    *{
-     box-sizing: border-box; /*전체에 박스사이징*/
-     outline: none; /*focus 했을때 테두리 나오게 */
+     box-sizing: border-box;
+     outline: none;
    }
    
    body{
@@ -38,22 +38,21 @@
    .member{
        width: 400px;
        /* border: 1px solid #000; */
-       margin: auto; /*중앙 정렬*/
+       margin: auto;
        padding: 0 20px;
        margin-bottom: 20px;
    }
    
    .member .field{
-       margin :5px 0; /*상하로 좀 띄워주기*/
+       margin :5px 0;
    }
    
    .member b{
        /* border: 1px solid #000; */
-       display: block; /*수직 정렬하기 */
+       display: block;
        margin-bottom: 5px;
    }
    
-   /*input 중 radio 는 width 가 100%면 안되니까 */
    .member input:not(input[type=radio]),.member select{
        border: 1px solid #dadada;
        padding: 15px;
@@ -148,15 +147,15 @@
           <!-- 이메일 -->
             <b>이메일</b>
             <input type="text" name="memailId" placeholder="이메일 아이디">
-      @
-      <input type="text" id="eDomain" name="memailDomain" placeholder="이메일 도메인">
-      <select onchange="selectDomain(this)">
-       <option value="">직접입력</option>
-       <option value="naver.com">네이버</option>
-       <option value="daum.net">다음</option>
-       <option value="google.com">구글</option>
-      </select>
-          <!-- 6. 가입하기 버튼 -->
+		      @
+		      <input type="text" id="eDomain" name="memailDomain" placeholder="이메일 도메인">
+		      <select onchange="selectDomain(this)">
+		       <option value="">직접입력</option>
+		       <option value="naver.com">네이버</option>
+		       <option value="daum.net">다음</option>
+		       <option value="google.com">구글</option>
+		      </select>
+          <!-- 가입하기 버튼 -->
           <input type="submit" value="가입하기">
 
          </form>
