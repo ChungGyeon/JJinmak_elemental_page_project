@@ -14,7 +14,7 @@
     <meta name="generator" content="Hugo 0.115.4">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       
-
+<!-- 요 -->
     <title>소개팅페이지</title>
    
     <style>
@@ -279,7 +279,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary" onClick="location.href='swipetest.jsp'">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/ljh_profile.jsp'">자세히(구현예정)</button>
       </div>
     </div>
   </div>
