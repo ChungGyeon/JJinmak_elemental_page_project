@@ -67,7 +67,7 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><div class="container"><a href="swipetest.jsp"><img src="LJH.jpg"/></a></div></div>
+      <div class="swiper-slide"><div class="container"><a href="./profile_all/ljh_profile.jsp"><img src="./img/LJH.jpg"/></a></div></div>
       <div class="swiper-slide">슬라이드 2</div>
       <div class="swiper-slide">Slide 3</div>
       <div class="swiper-slide">Slide 4</div>
