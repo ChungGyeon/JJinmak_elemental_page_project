@@ -14,7 +14,7 @@
     <meta name="generator" content="Hugo 0.115.4">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       
-<!-- 요 -->
+<!-- 잠만잠만 터미널 커밋은 잘못 건드리면 엿될거 같아  -->
     <title>소개팅페이지</title>
    
     <style>
