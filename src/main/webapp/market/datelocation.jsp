@@ -134,7 +134,7 @@
 <main>
 
 
-
+<!-- 어떻게 꾸며야 하 -->
 <div class="container text-center">
  <h1> 이렇게 제목을 박아넣고!</h1>
  <p>크리스마스 데이트 코스 추천<br>
@@ -145,9 +145,9 @@
 오시는길: 5호선 여의나루역 이용
  
 #크리스마스 #더현대서울 #서울데이트장소
-<img src="magazine1.png"/>
-<img src="magazine2.png"/>
-<img src="magazine3.png"/>
+<img src="./img/magazine1.png"/>
+<img src="./img/magazine2.png"/>
+<img src="./img/magazine3.png"/>
  <p>
 </div>
 

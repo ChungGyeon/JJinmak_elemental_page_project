@@ -145,7 +145,7 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
-        <a href="http://localhost:8080/JSPBOOK_C/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+        <a href="http://localhost:8080/jeongwon2-b/market/datelocation.jsp"><image width="100%" height="100%" href="./img/mainad1.png" preserveAspectRatio="xMidYMax slice"/>
         </a></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -193,7 +193,7 @@
     <div class="row">
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">임재혁</h2>
         <p>01 솔로라이더</p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil1">자세히
@@ -201,7 +201,7 @@
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjVfNzQg/MDAxNTQwNDcyNDY0MjU5.ObVghi3tzyF_ilwHeVO4qs0KXooGgqNmztkQtOkm8VEg.ynHbfUA-NwU11LdesL0jV66haI71WMjdSTjRM275UBQg.JPEG.jnway37/8--.jpg?type=w800" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/kyy.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">김의연</h2>
         <p>한줄소개</p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil2">여기가 모달</button>
@@ -234,7 +234,7 @@
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/>
-        <image href="mailpageimage1.png" width="100%" height="100%" preserveAspectRatio="xMidYMax slice"/>
+        <image href="./img/mailpageimage1.png" width="100%" height="100%" preserveAspectRatio="xMidYMax slice"/>
         </svg>
       </div>
     </div>
@@ -266,7 +266,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="LJH.jpg" alt="시메지로 임시등록" width="250" height="400">
+      <img src="./img/LJH.jpg" alt="시메지로 임시등록" width="250" height="400">
     
       <div class="container text-center">
        <h3>임재혁</h3>
@@ -294,12 +294,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjVfNzQg/MDAxNTQwNDcyNDY0MjU5.ObVghi3tzyF_ilwHeVO4qs0KXooGgqNmztkQtOkm8VEg.ynHbfUA-NwU11LdesL0jV66haI71WMjdSTjRM275UBQg.JPEG.jnway37/8--.jpg?type=w800" alt="시메지로 임시등록" width="250" height="400">
+      <img src="./img/kyy.png" alt="시메지로 임시등록" width="250" height="400">
        <div class="container text-center">
        <h3>김의연</h3>
        <p><br></p>
 
-       <h4>00년생, 열혈공부중<br></h4>
+       <h4>인천 살고있는 22살 김의연입니다:)<br>
+       생년월일 : 2000. 11. 28<br>
+       MBTI : INTP<br></h4>
        </div>
        
        
