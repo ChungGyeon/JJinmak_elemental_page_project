@@ -57,6 +57,12 @@
     top:390px;
     }
     
+    .container2
+    {
+    position: relative;
+    width: 1000px;
+      height: 1000px;
+    }
   </style>
   <!-- 사진규격은 container로 하도록합니다  -->
   <%@ include file="menu.jsp" %>
@@ -64,13 +70,15 @@
 
 <body>
 
+<button type="button" class="btn btn-primary" onclick="location.href='./home.jsp'">뒤로 가기</button>
+
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><div class="container"><a href="./profile_all/ljh_profile.jsp"><img src="./img/LJH.jpg"/></a></div></div>
-      <div class="swiper-slide">슬라이드 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide"><div class="container"><a href="./profile_all/ljh_profile.jsp"><img src="./img/LJH.jpg" class="img-fluid img-thumbnail"/></a></div></div>
+      <div class="swiper-slide"><div class="container2"><a href="./profile_all/kyy_profile.jsp"><img src="./img/kyy.png"/></a></div></div>
+      <div class="swiper-slide"><div class="container2"><a href="./profile_all/jgh_profile.jsp"><img src="https://pbs.twimg.com/media/EwGD1RGVoAIJCjh.jpg"/></a></div></div>
+      <div class="swiper-slide"><div class="container2"><a href="./profile_all/cum_profile.jsp"><img src="./img/cum2.jpg"/></a></div></div>
       <div class="swiper-slide">Slide 5</div>
       <div class="swiper-slide">Slide 6</div>
       <div class="swiper-slide">Slide 7</div>

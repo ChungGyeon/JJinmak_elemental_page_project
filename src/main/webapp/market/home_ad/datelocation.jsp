@@ -91,7 +91,7 @@
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-   <%@ include file="menu.jsp" %>
+   <%@ include file="../menu.jsp" %>
   </head>
   <body>
     <!-- 다크모드 -->
@@ -145,13 +145,13 @@
 오시는길: 5호선 여의나루역 이용
  
 #크리스마스 #더현대서울 #서울데이트장소
-<img src="./img/magazine1.png"/>
-<img src="./img/magazine2.png"/>
-<img src="./img/magazine3.png"/>
+<img src="../img/magazine1.png"/>
+<img src="../img/magazine2.png"/>
+<img src="../img/magazine3.png"/>
  <p>
 </div>
 
 </main>
-	<%@ include file="footer.jsp" %>
+	<%@ include file="../footer.jsp" %>
 </body>
 </html>

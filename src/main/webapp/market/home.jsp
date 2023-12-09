@@ -90,6 +90,24 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      
+     /* 메인페이지 프로필 정렬*/
+    .imgposition {
+    text-align: center;
+    }
+    .mainadpage {
+    top: 50px;
+    }
+    
+    .mainadpageset {
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  border: 10px solid #000;
+  width: 300px;
+  text-align: center;
+}
     </style>
 
     
@@ -146,7 +164,7 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
-        <a href="http://localhost:8080/jeongwon2-b/market/datelocation.jsp"><image width="100%" height="100%" href="./img/mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+        <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation.jsp"><image width="100%" height="100%" href="./img/mainad1.png" preserveAspectRatio="xMidYMax slice"/>
         </a></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -156,21 +174,30 @@
           </div>
         </div>
       </div>
+      
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+       <svg class="bd-placeholder-img" width="100%" height="170%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+         <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation2.jsp"><image width="100%" height="80%" href="./img/mainad2.jpeg" preserveAspectRatio="xMidYMax slice"/>
+        </a></svg>
         <div class="container">
           <div class="carousel-caption">
-            
-
-            <p>설명2</p>
+          
+          <div class="p-3 mb-2 bg-light text-dar" style="--bs-bg-opacity: .5;">
+           <p class="fw-bold" style="color:black;">
+           크리스마스에도 데이트는 역시 롯데월드
+           </p>
+           </div>
+           
           </div>
         </div>
       </div>
+      
+      
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+   
         <div class="container">
           <div class="carousel-caption text-end">
-            
             <p>설명3</p>
           </div>
         </div>
@@ -216,7 +243,7 @@
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="./img/cum2.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/cum2.jpg" width="130%" height="120%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">최우민</h2>
         <p>한줄소개</p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil4">자세히</button>
@@ -266,7 +293,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="./img/LJH.jpg" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/LJH.jpg" alt="시메지로 임시등록"  width="460" height="400">
     
       <div class="container text-center">
        <h3>임재혁</h3>
@@ -274,7 +302,7 @@
  
        <h4>01년생, 백수지망인 희망찬 친구<br></h4>
        </div>
-       
+       </div><!-- 이미지 css적용 div -->
        
       </div>
       <div class="modal-footer">
@@ -293,7 +321,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="./img/kyy.png" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/kyy.png" alt="시메지로 임시등록" width="460" height="400">
+      </div>
        <div class="container text-center">
        <h3>김의연</h3>
        <p><br></p>
@@ -317,11 +347,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" alt="시메지로 임시등록" width="460" height="400">
+      </div>
        <div class="container text-center">
        <h3>전관호</h3>
        <p><br></p>
@@ -333,7 +364,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/jgh_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -343,11 +374,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="https://www.behindpress.com/news/photo/202206/18712_31439_187.jpg" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/cum2.jpg" alt="시메지로 임시등록" width="460" height="400">
+      </div>
        <div class="container text-center">
        <h3>최우민</h3>
        <p><br></p>
