@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>임재혁 스와이 demo</title>
+  <title>김의연</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -39,13 +39,13 @@
       box-sizing: border-box;
       padding: 40px 60px;
     }
-
+/*사진 크기 변경하는 */
     .parallax-bg {
       position: absolute;
       left: 0;
       top: 0;
       width: 130%;
-      height: 300%;
+      height: 130%;
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
@@ -73,15 +73,15 @@
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
     <div class="parallax-bg" style="
-          background-image: url(LJH.jpg);
+          background-image: url(cum.jpeg);
         " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">임재혁</div>
-        <div class="subtitle" data-swiper-parallax="-200">01년생</div>
+        <div class="title" data-swiper-parallax="-300">최우민</div>
+        <div class="subtitle" data-swiper-parallax="-200">99년생</div>
         <div class="text" data-swiper-parallax="-100">
-          <h1>임재혁<br></h1>
-          <h3>생년월일 : 2001. 02. 03<br>
+          <h1>최우민<br></h1>
+          <h3>생년월일 : 1999. 02. 03<br>
           
           </h3>
         </div>

@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>임재혁 스와이 demo</title>
+  <title>김의연</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -43,7 +43,6 @@
     .parallax-bg {
       position: absolute;
       left: 0;
-      top: 0;
       width: 100%;
       height: 100%;
       -webkit-background-size: cover;
@@ -73,7 +72,7 @@
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
     <div class="parallax-bg" style="
-          background-image: url(kyy.png);
+          background-image: url(kyy2.png);
         " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -89,7 +88,6 @@
           혈액형 : RH+ B<br>
           휴대폰 : 갤럭시 s23+<br>
           </h3>
-          </p>
         </div>
       </div>
       <div class="swiper-slide">

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       
 <!-- 잠만잠만 터미널 커밋은 잘못 건드리면 엿될거 같아  -->
-<!-- 아니정말 파일이 독립된건가?? --> -->
+<!-- 아니정말 파일이 독립된건가?? -->
     <title>소개팅페이지</title>
    
     <style>
@@ -205,21 +205,21 @@
         <image href="./img/kyy.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">김의연</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil2">여기가 모달</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil2">자세히</button>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">전관호</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil3">여기가 모달</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil3">자세히</button>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="https://www.behindpress.com/news/photo/202206/18712_31439_187.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/cum2.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">최우민</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil4">여기가 모달</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil4">자세히</button>
       </div><!-- /.col-lg-3 -->
     </div><!-- /.row -->
 <!--  </div>-->
@@ -263,7 +263,6 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -280,7 +279,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/ljh_profile.jsp'">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/ljh_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -291,7 +290,6 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -309,7 +307,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/kyy_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -360,7 +358,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/cum_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
