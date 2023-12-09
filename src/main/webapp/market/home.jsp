@@ -16,7 +16,7 @@
       
 
     <title>소개팅페이지</title>
-   
+   <!--12월1일 커밋테스트용 주석입니다 -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -145,7 +145,7 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
-        <a href="http://localhost:8080/JSPBOOK_C/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+        <a href="http://localhost:8080/jeongwon2-b/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
         </a></svg>
         <div class="container">
           <div class="carousel-caption text-start">
