@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.util.Enumeration"%>
 <!DOCTYPE html>
 <html>
-<head>
-
+<head> 
 <title>Insert title here</title>
 
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
@@ -24,7 +25,11 @@
 	        <ul class="navbar-nav me-auto mb-2 mb-md-0">
 	          <li class="nav-item">
 	          <!-- 로그인도 안넘어가면 주소가 문제일거 -->
+	          
 	            <a class="nav-link" href="loginForm.jsp">로그인</a>
+
+	            <a class="nav-link" href="logout.jsp">로그아웃</a>
+
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link" href="joinForm.jsp">회원가입</a>

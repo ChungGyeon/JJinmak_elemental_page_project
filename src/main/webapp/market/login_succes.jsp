@@ -76,7 +76,7 @@
         <!-- 컨텐츠 시작 -->
         <div class="card mb-4 mx-auto" style="width: 500px;">
         	
-        	
+        	<a class="nav-link" href="logout.jsp">로그아웃</a>
         	
         </div>
         <!-- 컨텐츠 끝 -->

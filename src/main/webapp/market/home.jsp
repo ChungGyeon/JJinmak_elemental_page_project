@@ -184,7 +184,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
- 
+	
   <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-primary" onClick="location.href='findprofile.jsp'">사람을 찾으러 떠나볼까요?</button></div>
 <!-- Three columns of text below the carousel -->
  <hr class="featurette-divider">
