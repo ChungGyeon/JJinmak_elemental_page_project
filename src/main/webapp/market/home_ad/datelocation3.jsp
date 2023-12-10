@@ -136,22 +136,29 @@
 
 <!-- 어떻게 꾸며야 하 -->
 <div class="container text-center">
+<h1>3</h1>
  <h1> 잠들지 않는 서울의 밤, White Night in Seoul</h1>
- <p><br>
- 
-2023년의 서울 빛초롱 축제는 크리스마스 마켓 ‘광화문광장 마켓’과 동시에 개최 됩니다! 올해로 15회차를 맞이한 서울 빛초롱 축제는 연평균 200만명이 방문하는 대규묘 야간 빛 축제이며 또 올해에는 특별히 광화문 광장 마켓과 함께하여 먹거리존, 체험존, 포토존 등 여러분들에게 풍성한 먹거리와 아름다운 볼거리를 제공할 것입니다. 서울의 겨울 밤을 느끼고 싶으시다면 청계천으로 가보는건 어떨까요?
- 
-운영기간: 2023.12.15(금) ~ 2024.1.21.(일)
-시간: 매일 18~22시
-장소: 광화문광장, 세종로공원, 청계천, 서울광장
- 
-#청계전 #광화문광장 #서울빛초롱축제
+ <hr class="featurette-divider">
+<img src="../img/magazine3-1.png"/><br>
+ <hr class="featurette-divider">
+<p class="fs-2">2023년의 서울 빛초롱 축제는 크리스마스 마켓 ‘광화문광장 마켓’과 동시에 개최 됩니다! <br>
+<hr class="featurette-divider">
+<img src="../img/magazine3-2.png"/><br>
+<hr class="featurette-divider">
+<p class="fs-2">올해로 15회차를 맞이한 서울 빛초롱 축제는 연평균 200만명이 방문하는 대규 야간 빛 축제이며 <br>
+또 올해에는 특별히 광화문 광장 마켓과 함께하여 먹거리존, 체험존, 포토존 등 여러분들에게 풍성한 먹거리와 아름다운 볼거리를 제공할 것입니다.<br>
+<p class="fs-2"> 서울의 겨울 밤을 느끼고 싶으시다면 청계천으로 가보는건 어떨까요?<br>
+ <hr class="featurette-divider">
+ <img src="../img/magazine3-3.png"/><br>
+<img src="../img/magazine3-4.png"/><br>
+<hr class="featurette-divider">
+운영기간: 2023.12.15(금) ~ 2024.1.21.(일)<br>
+시간: 매일 18~22시<br>
+장소: 광화문광장, 세종로공원, 청계천, 서울광장<br>
+ <br>
+#청계전 #광화문광장 #서울빛초롱축제<br>
+<hr class="featurette-divider">
 
-<img src="../img/magazine3-1.png"/>
-<img src="../img/magazine3-2.png"/>
-<img src="../img/magazine3-3.png"/>
-<img src="../img/magazine3-4.png"/>
- <p>
 </div>
 
 </main>

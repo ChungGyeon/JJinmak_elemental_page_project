@@ -136,19 +136,27 @@
 
 <!-- 어떻게 꾸며야 하 -->
 <div class="container text-center">
- <h1> 이렇게 제목을 박아넣고!</h1>
- <p>크리스마스 데이트 코스 추천<br>
+ <h1> 1</h1>
+  <hr class="featurette-divider">
+ <h1>크리스마스 데이트 코스 추천</h1><br>
+  <hr class="featurette-divider">
+ <img src="../img/magazine1.png"/><p class="fs-2">
+ <hr class="featurette-divider">
+<p class="fs-2">현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다.<br>
+ 올해에도 역시 더 현대 서울에서 크리스마스를 더욱 즐겁게 보낼 수 있도록 이벤트를 준비하였는데요, 바로 ‘해리의 꿈의 상점’입니다! <br></p>
+  <hr class="featurette-divider">
+ <img src="../img/magazine2.png"/><br>
+  <hr class="featurette-divider">
+ <p class="fs-2">수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?<br>
  
-현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다. 올해에도 역시 더 현대 서울에서 크리스마스를 더욱 즐겁게 보낼 수 있도록 이벤트를 준비하였는데요, 바로 ‘해리의 꿈의 상점’입니다! 수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?
- 
-이용시간: 월-목:10:00~20:00 / 금-일:10:00~20:30
-오시는길: 5호선 여의나루역 이용
- 
-#크리스마스 #더현대서울 #서울데이트장소
-<img src="../img/magazine1.png"/>
-<img src="../img/magazine2.png"/>
+이용시간: 월-목:10:00~20:00 / 금-일:10:00~20:30<br>
+오시는길: 5호선 여의나루역 이용<br>
+
+#크리스마스 #더현대서울 #서울데이트장소</p>
+ <hr class="featurette-divider">
+
 <img src="../img/magazine3.png"/>
- <p>
+ <hr class="featurette-divider">
 </div>
 
 </main>

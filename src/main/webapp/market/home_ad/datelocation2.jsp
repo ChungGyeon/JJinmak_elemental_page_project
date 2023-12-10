@@ -136,20 +136,30 @@
 
 <!-- 어떻게 꾸며야 하 -->
 <div class="container text-center">
- <h1> 이렇게 제목을 박아넣고!</h1>
- <p>크리스마스 데이트 코스 추천<br>
- 
-현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다. 올해에도 역시 더 현대 서울에서 크리스마스를 더욱 즐겁게 보낼 수 있도록 이벤트를 준비하였는데요, 바로 ‘해리의 꿈의 상점’입니다! 수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?
- 
-이용시간: 월-목:10:00~20:00 / 금-일:10:00~20:30
-오시는길: 5호선 여의나루역 이용
- 
-#크리스마스 #더현대서울 #서울데이트장소
-<img src="../img/magagine2-1.png"/>
-<img src="../img/magagine2-2.png"/>
-<img src="../img/magagine2-3.png"/>
-<img src="../img/magagine2-4.png"/>
- <p>
+ <h1>2</h1>
+ <hr class="featurette-divider">
+ <h1>&lt;크리스마스에도 데이트는 역시 롯데월드&gt;</h1><br>
+ &lt;Miracle Winter 2023&gt;<br>
+ <hr class="featurette-divider">
+ <img src="../img/magagine2-1.png"/>
+<hr class="featurette-divider">
+<p class="fs-2">학생들의 데이트 코스로 유명한 롯데월드가 이번엔 크리스마스로 여러분들을 찾아 갑니다! <br>
+<hr class="featurette-divider">
+<img src="../img/magagine2-2.png"/><br>
+<hr class="featurette-divider">
+<p class="fs-2">‘해피 크리스마스 퍼레이드’ , ‘마법 성냥과 꿈꾸는 밤’ , ‘크리스마스 캐롤 환타지’ 등 여러분들을 동심에 젖게 할 퍼레이드로 가득 차 있는데요. <br>
+<hr class="featurette-divider">
+<img src="../img/magagine2-3.png"/><br>
+<hr class="featurette-divider">
+<p class="fs-2">이번 크리스마스엔 그동안의 걱정과 근심을 잠깐 내려놓고 잠시 어린아이로 돌아가 보는건 어떨까요?<br>
+ <hr class="featurette-divider"><br>
+운영기간: 2023.11.25.(토) ~ 2023.12.31.(일)<br>
+관람시간: 14:00 ~ 20:00<br>
+장소: 어드벤처 1층 퍼레이드 코스<br>
+#크리스마스 #롯데월드 #퍼레이드<br>
+
+<hr class="featurette-divider">
+
 </div>
 
 </main>
