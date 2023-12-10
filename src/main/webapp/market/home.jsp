@@ -125,12 +125,12 @@
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true" onclick="darkMode()">
+          <button id="darkModeLight" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true" onclick="darkMode()">
             Light
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" onclick="darkMode()">
+          <button id="darkModeDark" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" onclick="darkMode()">
             Dark
           </button>
         </li>
@@ -413,16 +413,13 @@
 
   <!-- /.container -->
 </div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
+
+<div class="container mt-4">
+    <label class="form-check-label">
+        <input type="checkbox" id="darkModeToggle"> Dark Mode
+    </label>
 </div>
+
 </main>
 	<%@ include file="./footer.jsp" %>
 
@@ -458,6 +455,45 @@
             }
         }
 	</script>
+	
+	<!-- 다크모드 유지용 쿠키 -->
+	<script>
+    const savedTheme = getCookie('theme');
+
+    setTheme(savedTheme);
+
+    function setTheme(theme) {
+        const themeStyles = document.getElementById('theme-styles');
+
+        if (theme === 'light') {
+            themeStyles.innerHTML = ':root { --bg-color: #fff; --text-color: #333; }';
+        } else if (theme === 'dark') {
+            themeStyles.innerHTML = ':root { --bg-color: #333; --text-color: #fff; }';
+        } else {
+            
+            themeStyles.innerHTML = ''; 
+        }
+
+        //쿠키 몇일 유지 할까 
+        setCookie('theme', theme, 30); // 30일 유지 
+    }
+
+    // 쿠키 맨들어 
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    // 셋쿠키 
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = `expires=${date.toUTCString()}`;
+        document.cookie = `${name}=${value};${expires};path=/`;
+    }
+
+</script>
 </body>
 
 </html>
