@@ -19,7 +19,7 @@
 	<header data-bs-theme="light">
 	  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #fcb8d9">
 	    <div class="container-fluid">
-	      <a class="navbar-brand" href="home.jsp">LoveLJKC</a>
+	      <a class="navbar-brand" href="http://localhost:8080/jeongwon2-b/market/home.jsp">LoveLJKC</a>
 	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="navbar-toggler-icon"></span>
 	      </button>
