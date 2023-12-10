@@ -1,15 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>   
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.115.4">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-       
+    
+
     <title>LoveLJKC</title>
 
     <style>
@@ -19,7 +22,7 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
-      }
+      } 
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -107,10 +110,11 @@
     
     <link href="carousel.css" rel="stylesheet">
    <%@ include file="./menu.jsp" %>
+   
   </head>
   <body>
-    <!-- 다크모드 -->
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <!-- 다크모드 근데 왜 작동을 안한느거야 -->
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
@@ -122,28 +126,24 @@
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+          <button id="darkModeLight" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true" onclick="darkMode()">
             Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+          <button id="darkModeDark" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" onclick="darkMode()">
             Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="false">
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li> 
       </ul>
     </div>
+
 
     <!-- 광고 페이지 부분 -->
 <main>
@@ -414,9 +414,17 @@
 
   <!-- /.container -->
 </div>
+
+
 </main>
 	<%@ include file="./footer.jsp" %>
 
+<!-- 다크모드 스크립트  -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<!-- 로그인 관련스크립트  -->
 	<script type="text/javascript">
 		function loginCk() {
 			console.log('확인');
@@ -427,7 +435,24 @@
 				location.href='findprofile.jsp';
 			}
 		}
+		
+		
+		function darkMode() {
+            // 현재 모드를 가져옴
+            let mode = $('html').attr("data-bs-theme");
+
+            // 현재 모드와 반대되는 모드로 설정
+            if (mode == 'dark') {
+                $('html').attr("data-bs-theme", "light");
+                $('.mode-change-btn').html('다크모드');
+            } else {
+                $('html').attr("data-bs-theme", "dark");
+                $('.mode-change-btn').html('라이트모드');
+            }
+        }
 	</script>
+	
+
 </body>
 
 </html>
