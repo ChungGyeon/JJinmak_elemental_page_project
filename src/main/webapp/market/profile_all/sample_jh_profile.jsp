@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>LoveLJKC - 전관호(대체사진)</title>
+  <title>LoveLJKC - 백지헌</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -39,13 +39,13 @@
       box-sizing: border-box;
       padding: 40px 60px;
     }
-    /*사진조절부*/
+/*사진 크기 변경하는 */
     .parallax-bg {
       position: absolute;
       left: 0;
       top: 0;
-      width: 150%;
-      height: 100%;
+      width: 130%;
+      height: 130%;
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
@@ -72,15 +72,16 @@
   <!-- Swiper -->
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-     <div class="parallax-bg" style="
-          background-image: url(jgh_back.jpg);" data-swiper-parallax="-23%"></div>
+    <div class="parallax-bg" style="
+          background-image: url(https://www.breaknews.com/imgdata/breaknews_com/202005/2020050151439533.jpg);
+        " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">전관호</div>
-        <div class="subtitle" data-swiper-parallax="-200">01년생</div>
+        <div class="title" data-swiper-parallax="-300">백지헌</div>
+        <div class="subtitle" data-swiper-parallax="-200">03년생</div>
         <div class="text" data-swiper-parallax="-100">
-          <h1>전관호<br></h1>
-          <h3>생년월일 : 2001. 11. 09<br>
+          <h1>백지헌<br></h1>
+          <h3>생년월일 : 2003. 04. 07<br>
           
           </h3>
         </div>

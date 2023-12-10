@@ -6,7 +6,7 @@
 <html>
   <head>
   <meta charset="utf-8" />
-  <title>상대방찾기</title>
+  <title>LoveLJKC - Find Your Partner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.115.4">
@@ -16,7 +16,7 @@
   <!-- Demo styles -->
   <style>
     html,
-    body {
+    body {  
       position: relative;
       height: 100%;
     }
@@ -63,6 +63,12 @@
     width: 1000px;
       height: 1000px;
     }
+    .containerad
+    {
+    position: relative;
+    width: 1500px;
+      height: 1000px;
+    }
   </style>
   <!-- 사진규격은 container로 하도록합니다  -->
   <%@ include file="menu.jsp" %>
@@ -75,15 +81,15 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><div class="container"><a href="./profile_all/ljh_profile.jsp"><img src="./img/LJH.jpg" class="img-fluid img-thumbnail"/></a></div></div>
+      <div class="swiper-slide"><div class="container2"><a href="./profile_all/sample_jh_profile.jsp"><img src="./img/jh1.png"/></a></div></div>
       <div class="swiper-slide"><div class="container2"><a href="./profile_all/kyy_profile.jsp"><img src="./img/kyy.png"/></a></div></div>
       <div class="swiper-slide"><div class="container2"><a href="./profile_all/jgh_profile.jsp"><img src="https://pbs.twimg.com/media/EwGD1RGVoAIJCjh.jpg"/></a></div></div>
+      <div class="swiper-slide"><div class="container2"><a href="./profile_all/js_profile.jsp"><img src="https://cdn.newsculture.press/news/photo/202302/517861_636353_5956.jpg"/></a></div></div>
+      <div class="swiper-slide"><div class="containerad"><a href="https://www.coupang.com/"><img src="https://img.etnews.com/news/article/2014/11/07/article_07104619771136.jpg"/></a></div></div>
+      <div class="swiper-slide"><div class="container"><a href="./profile_all/ljh_profile.jsp"><img src="./img/LJH.jpg" class="img-fluid img-thumbnail"/></a></div></div>
+      <div class="swiper-slide"><div class="containerad"><a href="https://www.yeogi.com/"><img src="./img/ad2.png" style="width: 100%; height: 100%;"/></a></div></div>
       <div class="swiper-slide"><div class="container2"><a href="./profile_all/cum_profile.jsp"><img src="./img/cum2.jpg"/></a></div></div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide"><div class="container2"><a href="./profile_all/sample_ccm_profile.jsp"><img src="https://i.namu.wiki/i/QDc5MGwKP5NvucgH0Mc80VmPD9hxj6e-gQYpgEQLw_OZq8ZVA8OSS1HOAcbGzi4pkZLwSN3B4kCj1hZYiSx66fnFnCDmRpLidAFlhqcVdHfQv8AFh7jl4bT7zP93wfVynd7HxFkpo203dHZSgpmQiw.webp" class="img-fluid img-thumbnail"/></a></div></div>
     </div>
     <div class="swiper-pagination"></div>
   </div>

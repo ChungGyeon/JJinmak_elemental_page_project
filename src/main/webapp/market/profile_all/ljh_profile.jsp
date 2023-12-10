@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>임재혁 스와이 demo</title>
+  <title>LoveLJKC - 임재혁</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -87,17 +87,12 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+        <div class="title" data-swiper-parallax="-300">취미는 어떤건가요?</div>
+        <div class="subtitle" data-swiper-parallax="-200">라이딩?</div>
         <div class="text" data-swiper-parallax="-100">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            옛날부터 차를 타고 여행하는 걸 좋아했는데, 어릴때는 차를 몰수 없으니 자전거로 이곳저곳 다니다보니 자전거 타는걸 좋아하게 된거 같아요<br>
+            이러면 여행을 좋아한다고 해야하나?
           </p>
         </div>
       </div>
