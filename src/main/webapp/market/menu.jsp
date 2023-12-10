@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
-<title>Insert title here</title>
 
+<title>LoveJHKC</title>
+<head> 
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -15,10 +15,11 @@
 	<link href="carousel.rtl.css" rel="stylesheet">
 </head>
 <body>
-	<header data-bs-theme="dark">
-	  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<!--다크모드 구현할때 아래 테마 dark로 하면  -->
+	<header data-bs-theme="light">
+	  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #fcb8d9">
 	    <div class="container-fluid">
-	      <a class="navbar-brand" href="home.jsp">Blind Date</a>
+	      <a class="navbar-brand" href="home.jsp">LoveJHKC</a>
 	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="navbar-toggler-icon"></span>
 	      </button>
