@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
 <%
 	String id = (String)session.getAttribute("user_id");
 	String name = (String)session.getAttribute("user_name");
 %>
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">

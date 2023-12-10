@@ -31,7 +31,7 @@
 	String mname = request.getParameter("mname");
 	String mphone = request.getParameter("mphone");
     out.println(mid);
-    out.println(memail);
+    out.println(memail); 
 	// 1.변수선언
     String dbURL = "jdbc:mysql://localhost:3306/jspbook";
     String dbUser = "root";

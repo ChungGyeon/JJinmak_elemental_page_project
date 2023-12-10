@@ -4,6 +4,7 @@
 <%@ page import="java.util.Enumeration"%>
 <!DOCTYPE html>
 <html>
+
 <head> 
 <title>Insert title here</title>
 
@@ -26,19 +27,18 @@
 	          <li class="nav-item">
 	          <!-- 로그인도 안넘어가면 주소가 문제일거 -->
 	          
-	            <a class="nav-link" href="loginForm.jsp">로그인</a>
-
-	            <a class="nav-link" href="logout.jsp">로그아웃</a>
-
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="joinForm.jsp">회원가입</a>
+	          <%
+				if(session.getAttribute("user_id")==null){
+					out.println("<a class='nav-link' href='loginForm.jsp'>로그인</a>");
+					out.println("<li>");
+					out.println("<li class='nav-item'>");
+					out.println("<a class='nav-link' href='joinForm.jsp'>회원가입</a>");
+				}else{
+					out.println("<a class='nav-link' href='logout.jsp'>로그아웃</a>");
+				}
+			%>
 	          </li>
 	        </ul>
-	        <form class="d-flex" role="search">
-	          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-	          <button class="btn btn-outline-success" type="submit">Search</button>
-	        </form>
 	      </div>
 	    </div>
 	  </nav>

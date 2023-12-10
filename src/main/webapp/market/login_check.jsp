@@ -55,10 +55,21 @@
 			session.setAttribute("user_id", mid);
 			session.setAttribute("user_name", mname);
 			
-			response.sendRedirect("login_succes.jsp"); // 페이지이동
-			
+			%>
+				<script type="text/javascript">
+					alert("로그인 성공");
+					location.href='login_succes.jsp';
+				</script>
+			<%
+			//response.sendRedirect("login_succes.jsp"); // 페이지이동
 		} else{ // 로그인 실패
-			response.sendRedirect("loginForm.jsp"); // 실패 페이지
+			//response.sendRedirect("loginForm.jsp"); // 실패 페이지
+			%>
+				<script type="text/javascript">
+					alert("로그인 실패");
+					location.href='loginForm.jsp';
+				</script>
+			<%
 		}
 	} catch(Exception e){
 		e.printStackTrace();

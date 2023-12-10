@@ -16,7 +16,9 @@
     <body>
 	<script type="text/javascript">
 	     <%	
-			session.invalidate();
+			//session.invalidate();
+	    	session.removeAttribute("user_id");
+	    	session.removeAttribute("user_name");
 		%>
 		
 		alert("로그아웃 되셨습니다");
@@ -29,7 +31,7 @@
         
         <%@ include file="menu.jsp" %>
         
-        <!-- 메뉴 끝 -->
+        <!-- 메뉴 끝 --> 
         
         <!-- Page header with logo and tagline-->
         <header class="py-5 bg-light border-bottom mb-4">

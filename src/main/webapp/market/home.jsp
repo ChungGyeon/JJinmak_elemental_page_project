@@ -4,9 +4,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script src="../assets/js/color-modes.js"></script>
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -84,7 +81,7 @@
         --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
         --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
       }
       .bd-mode-toggle {
         z-index: 1500;
@@ -184,8 +181,23 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-	
-  <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-primary" onClick="location.href='findprofile.jsp'">사람을 찾으러 떠나볼까요?</button></div>
+
+<%
+
+	if(session.getAttribute("user_id")==null){
+		out.println("<div class='d-grid gap-2 col-6 mx-auto' style='text-align: center; height: 40px; width: 500px; background-color: #0d6efd; border-radius: 10px'>");
+		out.println("<a style='text-decoration-line: none; color: white; margin-top: 7px; font-size: 17px;' href='loginForm.jsp'>로그인 후 이용해주세요</a></button></div>");
+	}else{
+		out.println("<div class='d-grid gap-2 col-6 mx-auto'>");
+		out.println("<button type='button' class='btn btn-primary' onClick='location.href='findprofile.jsp''>사람을 찾으러 떠나볼까요?</button></div>");
+	}
+
+%>
+<!--  
+  <div class="d-grid gap-2 col-6 mx-auto">
+  	<button type="button" class="btn btn-primary" onclick="loginCk">사람을 찾으러 떠나볼까요?</button>
+  </div>
+-->
 <!-- Three columns of text below the carousel -->
  <hr class="featurette-divider">
 
@@ -373,12 +385,17 @@
 </main>
 	<%@ include file="footer.jsp" %>
 
+	<script type="text/javascript">
+		function loginCk() {
+			console.log('확인');
+			if(session.getAttribute("user_id")==null){
+				alert("로그인 후 이용가능합니다!");
+				location.href='loginForm.jsp';
+			}else{
+				location.href='findprofile.jsp';
+			}
+		}
+	</script>
 </body>
-
-
-
-
-
-
 
 </html>
