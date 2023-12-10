@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>   
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark">
   <head>
 
     <meta charset="utf-8">
@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.115.4">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>LoveLJKC</title>
 
@@ -110,20 +111,38 @@
    <%@ include file="./menu.jsp" %>
   </head>
   <body>
-  <button class="mode-change-btn" onclick="darkMode()">다크모드설정</button>
     <!-- 다크모드 근데 왜 작동을 안한느거야 -->
-<div class="dropup-center dropup position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-
-  <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropup" aria-expanded="false">
-    Centered dropup
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action two</a></li>
-    <li><a class="dropdown-item" href="#">Action three</a></li>
-  </ul>
-</div>
-
+<!-- 이걸로 버튼 만들고싶은데 작동하다가 갑자기 멈춤 
+ <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true" onclick="darkMode()">
+            Light
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" onclick="darkMode()">
+            Dark
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="false">
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li> 
+      </ul>
+    </div> -->
+<button class="mode-change-btn" onclick="darkMode()">다크모드설정</button>
 
     <!-- 광고 페이지 부분 -->
 <main>
@@ -394,22 +413,13 @@
 
   <!-- /.container -->
 </div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
 </main>
 	<%@ include file="./footer.jsp" %>
 
 <!-- 다크모드 스크립트  -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 <!-- 로그인 관련스크립트  -->
@@ -425,19 +435,34 @@
 		}
 		
 		
-		function darkMode() {
-            // 현재 모드를 가져옴
-            let mode = $('html').attr("data-bs-theme");
-
-            // 현재 모드와 반대되는 모드로 설정
-            if (mode == 'dark') {
-                $('html').attr("data-bs-theme", "light");
-                $('.mode-change-btn').html('다크모드');
-            } else {
-                $('html').attr("data-bs-theme", "dark");
-                $('.mode-change-btn').html('라이트모드');
-            }
-        }
+		function darkMode(){
+			  
+			  // 현재 모드를 가져옴
+			  let mode = $('html').attr("data-bs-theme");
+			  
+			  // 현재 모드와 반대되는 모드로 설정
+			  if( mode == 'dark' ){
+			    $('html').attr("data-bs-theme", "light");
+			    $('.mode-change-btn').html('다크모드');
+			  }else{
+			    $('html').attr("data-bs-theme", "dark");
+			    $('.mode-change-btn').html('라이트모드');
+			  }            
+			}
+		/* 다크모드 관련 스크립트 */
+		function darkMode_dropup(){
+			  
+			  // 버튼 data-bs-theme-value를 가져
+			  let mode = $('button').attr("data-bs-theme-value");
+			  
+			  // dark로 되어있는 버튼을 누르면 다크
+			  if( mode == 'dark' ){
+			    $('html').attr("data-bs-theme", "dark");
+			  }//light로 되어있는 버튼을 누르면 라이트 
+			  else( mode == 'light' ) {
+				  $('html').attr("data-bs-theme", "light");
+			  }
+			}
 	</script>
 </body>
 
