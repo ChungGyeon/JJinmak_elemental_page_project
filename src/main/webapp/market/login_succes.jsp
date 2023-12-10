@@ -2,9 +2,11 @@
 <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
+<%
+	String id = (String)session.getAttribute("user_id");
+	String name = (String)session.getAttribute("user_name");
+%>
   <head><script src="../assets/js/color-modes.js"></script>
-
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -59,65 +61,11 @@
 	<%@ include file="menu.jsp" %>
 </head>
 
-<%
-        String mid = request.getParameter("mid");
-        String mpw = request.getParameter("mpw");
-
-        String dbURL = "jdbc:mysql://localhost:3306/jsbookbd";
-        String dbUser = "root";
-        String dbPassword = "1234";
-
-        Connection conn = null;
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
-
-            String sql = "SELECT * FROM members WHERE mid=? AND mpw=?";
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, mid);
-            pstmt.setString(2, mpw);
-            rs = pstmt.executeQuery();
-
-            if (rs.next()) {
-                out.println("Login Successful");
-            } else {
-                out.println("Invalid credentials. Please try again.");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (rs != null) {
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (pstmt != null) {
-                try {
-                    pstmt.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    %>
-
 <body>
 		<header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder">로그인 성공</h1>
+                    <h1 class="fw-bolder"><%=id %>(<%=name %>)님 안녕하세요</h1>
                 </div>
             </div>
         </header>
@@ -128,7 +76,7 @@
         <!-- 컨텐츠 시작 -->
         <div class="card mb-4 mx-auto" style="width: 500px;">
         	
-        	
+        	<a class="nav-link" href="logout.jsp">로그아웃</a>
         	
         </div>
         <!-- 컨텐츠 끝 -->

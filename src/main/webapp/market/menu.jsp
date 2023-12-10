@@ -1,11 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.util.Enumeration"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="EUC-KR">
 
+<<<<<<< HEAD
 <title>LoveJHKC</title>
+=======
+<head> 
+<title>Insert title here</title>
+>>>>>>> refs/remotes/origin/mergesector
 
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -26,16 +31,19 @@
 	        <ul class="navbar-nav me-auto mb-2 mb-md-0">
 	          <li class="nav-item">
 	          <!-- 로그인도 안넘어가면 주소가 문제일거 -->
-	            <a class="nav-link" href="loginForm.jsp">로그인</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="joinForm.jsp">회원가입</a>
+	          
+	          <%
+				if(session.getAttribute("user_id")==null){
+					out.println("<a class='nav-link' href='loginForm.jsp'>로그인</a>");
+					out.println("<li>");
+					out.println("<li class='nav-item'>");
+					out.println("<a class='nav-link' href='joinForm.jsp'>회원가입</a>");
+				}else{
+					out.println("<a class='nav-link' href='logout.jsp'>로그아웃</a>");
+				}
+			%>
 	          </li>
 	        </ul>
-	        <form class="d-flex" role="search">
-	          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-	          <button class="btn btn-outline-success" type="submit">Search</button>
-	        </form>
 	      </div>
 	    </div>
 	  </nav>

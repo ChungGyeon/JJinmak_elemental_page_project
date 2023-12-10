@@ -1,12 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     
 <!DOCTYPE html>
 <html>
   <head>
-  <script src="../assets/js/color-modes.js"></script>
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -17,7 +14,7 @@
 <!-- 잠만잠만 터미널 커밋은 잘못 건드리면 엿될거 같아  -->
 <!-- 아니정말 파일이 독립된건가?? -->
     <title>소개팅페이지</title>
-   
+   <!--12월1일 커밋테스트용 주석입니다 -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -85,7 +82,7 @@
         --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
         --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
       }
       .bd-mode-toggle {
         z-index: 1500;
@@ -164,7 +161,11 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
+<<<<<<< HEAD
         <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation.jsp"><image width="100%" height="100%" href="./img/mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+=======
+        <a href="http://localhost:8080/jeongwon2-b/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+>>>>>>> refs/remotes/origin/mergesector
         </a></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -216,7 +217,26 @@
     </button>
   </div>
 
+<<<<<<< HEAD
   <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-outline-danger" onClick="location.href='findprofile.jsp'" style="background-color: #fd9bcb;">사람을 찾으러 떠나볼까요? </button></div>
+=======
+<%
+
+	if(session.getAttribute("user_id")==null){
+		out.println("<div class='d-grid gap-2 col-6 mx-auto' style='text-align: center; height: 40px; width: 500px; background-color: #0d6efd; border-radius: 10px'>");
+		out.println("<a style='text-decoration-line: none; color: white; margin-top: 7px; font-size: 17px;' href='loginForm.jsp'>로그인 후 이용해주세요</a></button></div>");
+	}else{
+		out.println("<div class='d-grid gap-2 col-6 mx-auto'>");
+		out.println("<button type='button' class='btn btn-primary' onClick='location.href='findprofile.jsp''>사람을 찾으러 떠나볼까요?</button></div>");
+	}
+
+%>
+<!--  
+  <div class="d-grid gap-2 col-6 mx-auto">
+  	<button type="button" class="btn btn-primary" onclick="loginCk">사람을 찾으러 떠나볼까요?</button>
+  </div>
+-->
+>>>>>>> refs/remotes/origin/mergesector
 <!-- Three columns of text below the carousel -->
  <hr class="featurette-divider">
 
@@ -409,12 +429,17 @@
 </main>
 	<%@ include file="footer.jsp" %>
 
+	<script type="text/javascript">
+		function loginCk() {
+			console.log('확인');
+			if(session.getAttribute("user_id")==null){
+				alert("로그인 후 이용가능합니다!");
+				location.href='loginForm.jsp';
+			}else{
+				location.href='findprofile.jsp';
+			}
+		}
+	</script>
 </body>
-
-
-
-
-
-
 
 </html>

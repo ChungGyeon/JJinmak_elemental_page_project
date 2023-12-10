@@ -1,15 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="utf-8"%>
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.115.4">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         
 
 		<style type="text/css">
@@ -60,6 +55,8 @@
 	<%@ include file="menu.jsp" %>
 </head>
 <body>
+	
+
 		<header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
@@ -78,7 +75,7 @@
         		<div class="card-title">
         			<h1>Login</h1>
         			
-	        		<form id="login-form" action="home.jsp" method="post" onsubmit="return formCheck(this)">
+	        		<form id="login-form" action="login_check.jsp" method="post" onsubmit="return formCheck(this)">
 	        			<input type="text" id="id" name="mid" placeholder="id">
 	        			<input type="text" id="password" name="mpw" placeholder="password">
 	        			<input type="checkbox" id="check">아이디 저장
@@ -90,8 +87,6 @@
         	</div>
         </div>
         <!-- 컨텐츠 끝 -->
-
-	
 	
 	
 	
