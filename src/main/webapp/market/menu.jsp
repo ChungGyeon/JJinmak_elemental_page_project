@@ -6,7 +6,7 @@
 <html>
 
 
-<title>LoveJHKC</title>
+<title>LoveLJKC</title>
 <head> 
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -19,7 +19,7 @@
 	<header data-bs-theme="light">
 	  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #fcb8d9">
 	    <div class="container-fluid">
-	      <a class="navbar-brand" href="home.jsp">LoveJHKC</a>
+	      <a class="navbar-brand" href="http://localhost:8080/jeongwon2-b/market/home.jsp">LoveLJKC</a>
 	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="navbar-toggler-icon"></span>
 	      </button>

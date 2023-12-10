@@ -2,7 +2,7 @@
     pageEncoding="utf-8"%>
     
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light"><html>
   <head>
   <script src="../assets/js/color-modes.js"></script>
 
@@ -19,7 +19,7 @@
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
-        -moz-user-select: none;
+        -moz-user-select: none; 
         user-select: none;
       }
 
@@ -95,7 +95,8 @@
   </head>
   <body>
     <!-- 다크모드 -->
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+   <!-- 다크모드 근데 왜 작동을 안한느거야 -->
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
@@ -107,26 +108,21 @@
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+          <button id="darkModeLight" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true" onclick="darkMode()">
             Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+          <button id="darkModeDark" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" onclick="darkMode()">
             Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="false">
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
-        </li>
+        </li> 
       </ul>
     </div>
 
@@ -136,25 +132,63 @@
 
 <!-- 어떻게 꾸며야 하 -->
 <div class="container text-center">
+<h1>3</h1>
  <h1> 잠들지 않는 서울의 밤, White Night in Seoul</h1>
- <p><br>
- 
-2023년의 서울 빛초롱 축제는 크리스마스 마켓 ‘광화문광장 마켓’과 동시에 개최 됩니다! 올해로 15회차를 맞이한 서울 빛초롱 축제는 연평균 200만명이 방문하는 대규묘 야간 빛 축제이며 또 올해에는 특별히 광화문 광장 마켓과 함께하여 먹거리존, 체험존, 포토존 등 여러분들에게 풍성한 먹거리와 아름다운 볼거리를 제공할 것입니다. 서울의 겨울 밤을 느끼고 싶으시다면 청계천으로 가보는건 어떨까요?
- 
-운영기간: 2023.12.15(금) ~ 2024.1.21.(일)
-시간: 매일 18~22시
-장소: 광화문광장, 세종로공원, 청계천, 서울광장
- 
-#청계전 #광화문광장 #서울빛초롱축제
+ <hr class="featurette-divider">
+<img src="../img/magazine3-1.png"/><br>
+ <hr class="featurette-divider">
+<p class="fs-2">2023년의 서울 빛초롱 축제는 크리스마스 마켓 ‘광화문광장 마켓’과 동시에 개최 됩니다! <br>
+<hr class="featurette-divider">
+<img src="../img/magazine3-2.png"/><br>
+<hr class="featurette-divider">
+<p class="fs-2">올해로 15회차를 맞이한 서울 빛초롱 축제는 연평균 200만명이 방문하는 대규 야간 빛 축제이며 <br>
+또 올해에는 특별히 광화문 광장 마켓과 함께하여 먹거리존, 체험존, 포토존 등 여러분들에게 풍성한 먹거리와 아름다운 볼거리를 제공할 것입니다.<br>
+<p class="fs-2"> 서울의 겨울 밤을 느끼고 싶으시다면 청계천으로 가보는건 어떨까요?<br>
+ <hr class="featurette-divider">
+ <img src="../img/magazine3-3.png"/><br>
+<img src="../img/magazine3-4.png"/><br>
+<hr class="featurette-divider">
+운영기간: 2023.12.15(금) ~ 2024.1.21.(일)<br>
+시간: 매일 18~22시<br>
+장소: 광화문광장, 세종로공원, 청계천, 서울광장<br>
+ <br>
+#청계전 #광화문광장 #서울빛초롱축제<br>
+<hr class="featurette-divider">
 
-<img src="../img/magazine3-1.png"/>
-<img src="../img/magazine3-2.png"/>
-<img src="../img/magazine3-3.png"/>
-<img src="../img/magazine3-4.png"/>
- <p>
 </div>
 
 </main>
 	<%@ include file="../footer.jsp" %>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script type="text/javascript">
+		function loginCk() {
+			console.log('확인');
+			if(session.getAttribute("user_id")==null){
+				alert("로그인 후 이용가능합니다!");
+				location.href='loginForm.jsp';
+			}else{
+				location.href='findprofile.jsp';
+			}
+		}
+		
+		
+		function darkMode() {
+            // 현재 모드를 가져옴
+            let mode = $('html').attr("data-bs-theme");
+
+            // 현재 모드와 반대되는 모드로 설정
+            if (mode == 'dark') {
+                $('html').attr("data-bs-theme", "light");
+                $('.mode-change-btn').html('다크모드');
+            } else {
+                $('html').attr("data-bs-theme", "dark");
+                $('.mode-change-btn').html('라이트모드');
+            }
+        }
+	</script>
+	
 </body>
 </html>
