@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
+    pageEncoding="UTF-8"%>   
 <!DOCTYPE html>
 <html>
   <head>
@@ -110,7 +109,7 @@
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-   <%@ include file="menu.jsp" %>
+   <%@ include file="./menu.jsp" %>
   </head>
   <body>
     <!-- 다크모드 -->
@@ -145,7 +144,7 @@
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
-        </li>
+        </li> 
       </ul>
     </div>
 
@@ -161,11 +160,7 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
-<<<<<<< HEAD
         <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation.jsp"><image width="100%" height="100%" href="./img/mainad1.png" preserveAspectRatio="xMidYMax slice"/>
-=======
-        <a href="http://localhost:8080/jeongwon2-b/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
->>>>>>> refs/remotes/origin/mergesector
         </a></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -175,7 +170,7 @@
           </div>
         </div>
       </div>
-      
+        
       <div class="carousel-item">
        <svg class="bd-placeholder-img" width="100%" height="170%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
          <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation2.jsp"><image width="100%" height="80%" href="./img/mainad2.jpeg" preserveAspectRatio="xMidYMax slice"/>
@@ -216,27 +211,20 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-<<<<<<< HEAD
-  <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-outline-danger" onClick="location.href='findprofile.jsp'" style="background-color: #fd9bcb;">사람을 찾으러 떠나볼까요? </button></div>
-=======
+  
+<!-- 버튼 구현부 -->
 <%
 
 	if(session.getAttribute("user_id")==null){
 		out.println("<div class='d-grid gap-2 col-6 mx-auto' style='text-align: center; height: 40px; width: 500px; background-color: #0d6efd; border-radius: 10px'>");
-		out.println("<a style='text-decoration-line: none; color: white; margin-top: 7px; font-size: 17px;' href='loginForm.jsp'>로그인 후 이용해주세요</a></button></div>");
+		out.println("<a style='text-decoration-line: none; color: white; margin-top: 7px; font-size: 17px;' href='./loginForm.jsp'>로그인 후 이용해주세요</a></button></div>");
+		
 	}else{
-		out.println("<div class='d-grid gap-2 col-6 mx-auto'>");
-		out.println("<button type='button' class='btn btn-primary' onClick='location.href='findprofile.jsp''>사람을 찾으러 떠나볼까요?</button></div>");
+		out.println("<div class='d-grid gap-2 col-6 mx-auto' style='text-align: center; height: 40px; width: 600px;'><a href='./findprofile.jsp'><button type='button' class='btn btn-outline-danger' style='background-color: #fd9bcb; width: 600px;' >사람을 찾으러 떠나볼까요?</button></a></div>");
 	}
 
 %>
-<!--  
-  <div class="d-grid gap-2 col-6 mx-auto">
-  	<button type="button" class="btn btn-primary" onclick="loginCk">사람을 찾으러 떠나볼까요?</button>
-  </div>
--->
->>>>>>> refs/remotes/origin/mergesector
+
 <!-- Three columns of text below the carousel -->
  <hr class="featurette-divider">
 
@@ -427,7 +415,7 @@
   <!-- /.container -->
 </div>
 </main>
-	<%@ include file="footer.jsp" %>
+	<%@ include file="./footer.jsp" %>
 
 	<script type="text/javascript">
 		function loginCk() {

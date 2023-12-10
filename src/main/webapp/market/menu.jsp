@@ -5,13 +5,9 @@
 <!DOCTYPE html>
 <html>
 
-<<<<<<< HEAD
-<title>LoveJHKC</title>
-=======
-<head> 
-<title>Insert title here</title>
->>>>>>> refs/remotes/origin/mergesector
 
+<title>LoveJHKC</title>
+<head> 
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
