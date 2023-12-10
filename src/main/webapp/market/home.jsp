@@ -108,7 +108,44 @@
   text-align: center;
 }
     </style>
+ <!-- 스와이퍼 전용  -->
+<style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
     
     <link href="carousel.css" rel="stylesheet">
    <%@ include file="./menu.jsp" %>
@@ -209,7 +246,7 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">임재혁</h2>
-        <p>01 솔로라이더</p>
+        <p>01 바지리더입니다</p>
         <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil1" style="background-color: #fd9bcb;">자세히
         </button>
       </div><!-- /.col-lg-3 -->
@@ -217,7 +254,7 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/kyy.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">김의연</h2>
-        <p>한줄소개</p>
+        <p>안녕하세요 00년생 김의연 입니다!</p>
         <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil2" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3 text-center">
@@ -231,7 +268,7 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/cum2.jpg" width="130%" height="120%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">최우민</h2>
-        <p>한줄소개</p>
+        <p>판매완료</p>
         <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil4" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
     </div><!-- /.row -->
@@ -267,11 +304,17 @@
         <p class="lead">서로의 마음을 확인한 두 분을 위해 저희가 장소를 추천해줍니다! 자신과 가까운 곳, 상대방과 가까운 곳, 아니면 서로의 중간지점에서 만날만한 멋진 장소를 알려줄게요</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500여기에 슬라이드를 넣어서 구경시켜주자</text></svg>
+        
+         <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="./img/bottomad1.jpeg"/></div>
+           <div class="swiper-slide"><img src="./img/bottomad3.png"/></div>
+           <div class="swiper-slide"><img src="./img/bottomad2.jpeg"/></div>
+           <div class="swiper-slide"><img src="./img/bottomad4.jpeg"/></div>
+         </div>
+       </div>
       </div>
     </div>
-
-
 
 
 <!-- 임재혁 전용 -->
@@ -396,7 +439,6 @@
 
 </main>
 	<%@ include file="./footer.jsp" %>
-
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   
 	<script type="text/javascript">
@@ -414,10 +456,27 @@
 		    $('.mode-change-btn').html('라이트모드');
 		  }            
 		}
-
 	</script>
-	
-
+	<!-- 스와이퍼 js -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
