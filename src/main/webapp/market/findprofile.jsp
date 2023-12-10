@@ -104,11 +104,15 @@
         slidesPerView: 1,
         spaceBetween: 30,
         mousewheel: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
       });
+    
   </script>
   
     <div class="modal fade" id="guidmodal" tabindex="-1" role="dialog" aria-labelledby="guidmodalLabel" aria-hidden="true">
