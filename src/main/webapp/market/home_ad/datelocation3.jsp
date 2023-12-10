@@ -148,11 +148,21 @@
  <img src="../img/magazine3-3.png"/><br>
 <img src="../img/magazine3-4.png"/><br>
 <hr class="featurette-divider">
+
+<div class="d-grid gap-2 col-0">
+<div class="btn-group" role="group" aria-label="Basic example">
+  <a href="https://map.naver.com/p/search/%EA%B4%91%ED%99%94%EB%AC%B8%20%EA%B4%91%EC%9E%A5/place/13349962?c=15.91,0,0,0,dh&placePath=%3Fentry%253Dbmp" type="button" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">광화문광장</a>
+  <a href="https://map.naver.com/p/search/%EC%84%B8%EC%A2%85%EB%A1%9C%20%EA%B3%B5%EC%9B%90/place/19334582?c=17.84,0,0,0,dh&placePath=%3Fentry%253Dbmp" type="button" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">세종로공원</a>
+  <a href="https://map.naver.com/p/search/%EC%B2%AD%EA%B3%84%EC%B2%9C/place/13543936?c=16.82,0,0,0,dh" type="button" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">청계천</a>
+  <a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EA%B4%91%EC%9E%A5/place/11796247?c=16.10,0,0,0,dh&placePath=%3Fentry%253Dbmp" type="button" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">서울광장</a>
+</div></div><br>
+<p class="text-center">운영기간: 2023.11.25.(토) ~ 2023.12.31.(일)<br>
 운영기간: 2023.12.15(금) ~ 2024.1.21.(일)<br>
 시간: 매일 18~22시<br>
 장소: 광화문광장, 세종로공원, 청계천, 서울광장<br>
- <br>
+<br>
 #청계전 #광화문광장 #서울빛초롱축제<br>
+</p>
 <hr class="featurette-divider">
 
 </div>

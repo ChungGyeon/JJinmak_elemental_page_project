@@ -149,11 +149,14 @@
 <hr class="featurette-divider">
 <p class="fs-2">이번 크리스마스엔 그동안의 걱정과 근심을 잠깐 내려놓고 잠시 어린아이로 돌아가 보는건 어떨까요?<br>
  <hr class="featurette-divider"><br>
-운영기간: 2023.11.25.(토) ~ 2023.12.31.(일)<br>
+
+<div class="d-grid gap-2 col-6">
+<a href="https://map.naver.com/p/search/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C?c=15.00,0,0,0,dh" 
+class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true" ><p class="fs-4 text-start">롯데월드<br></p><p class="fs-8 text-start">송파구 올림픽로 204</p></a></div>
+<p class="text-start">운영기간: 2023.11.25.(토) ~ 2023.12.31.(일)<br>
 관람시간: 14:00 ~ 20:00<br>
 장소: 어드벤처 1층 퍼레이드 코스<br>
-#크리스마스 #롯데월드 #퍼레이드<br>
-
+#크리스마스 #롯데월드 #퍼레이드<br></p>
 <hr class="featurette-divider">
 
 </div>

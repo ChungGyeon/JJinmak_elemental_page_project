@@ -138,17 +138,20 @@
   <hr class="featurette-divider">
  <img src="../img/magazine1.png"/><p class="fs-2">
  <hr class="featurette-divider">
-<p class="fs-2">현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다.<br>
+<p class="fs-2 text-end">현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다.<br>
  올해에도 역시 더 현대 서울에서 크리스마스를 더욱 즐겁게 보낼 수 있도록 이벤트를 준비하였는데요, 바로 ‘해리의 꿈의 상점’입니다! <br></p>
   <hr class="featurette-divider">
  <img src="../img/magazine2.png"/><br>
   <hr class="featurette-divider">
- <p class="fs-2">수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?<br>
+ <p class="fs-2 container text-start">수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?<br>
  
 이용시간: 월-목:10:00~20:00 / 금-일:10:00~20:30<br>
 오시는길: 5호선 여의나루역 이용<br>
 
 #크리스마스 #더현대서울 #서울데이트장소</p>
+<div class="d-grid gap-2 col-6">
+<a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90/place/1386302181?placePath=?entry=pll&from=nx&fromNxList=true&searchType=place&c=13.62,0,0,0,dh" 
+class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true" ><p class="fs-4 text-start">더 현대서울백화점<br></p><p class="fs-8 text-start">영등포구 여의대로 108</p></a></div>
  <hr class="featurette-divider">
 
 <img src="../img/magazine3.png"/>
