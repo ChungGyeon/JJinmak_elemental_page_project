@@ -36,6 +36,9 @@
 					out.println("<a class='nav-link' href='joinForm.jsp'>회원가입</a>");
 				}else{
 					out.println("<a class='nav-link' href='logout.jsp'>로그아웃</a>");
+					out.println("<li>");
+					out.println("<li class='nav-item'>");
+					out.println("<a class='nav-link' href='./findprofile.jsp'>이상형찾기</a>");
 				}
 			%>
 	          </li>

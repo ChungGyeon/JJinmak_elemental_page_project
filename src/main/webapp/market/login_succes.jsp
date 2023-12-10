@@ -65,7 +65,8 @@
 		<header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder"><%=id %>(<%=name %>)님 안녕하세요</h1>
+                
+                    <h1 class="fw-bolder"><%=id %>(<%=name %>)님 안녕하세요.</h1>
                 </div>
             </div>
         </header>
@@ -74,9 +75,9 @@
         <div class="container">
            
         <!-- 컨텐츠 시작 -->
-        <div class="card mb-4 mx-auto" style="width: 500px;">
+        <div class="card mb-4 mx-auto d-flex align-items-center" style="width: 700px; height: 500px; background-color: #86e9fe6e; color: white;">
         	
-        	<a class="nav-link" href="logout.jsp">로그아웃</a>
+        	<h1 class="fw-bolder" style="margin-top: 200px;"><a class='nav-link' href='home.jsp' style="text-decoration-line: none;">메인페이지 이동하기</a></h1>
         	
         </div>
         <!-- 컨텐츠 끝 -->
