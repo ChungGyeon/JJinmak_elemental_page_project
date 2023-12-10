@@ -72,9 +72,8 @@
   <!-- Swiper -->
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-    <div class="parallax-bg" style="
-          background-image: url(jgh_back.jpg);
-        " data-swiper-parallax="-23%"></div>
+     <div class="parallax-bg" style="
+          background-image: url(jgh_back.jpg);" data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="title" data-swiper-parallax="-300">전관호</div>

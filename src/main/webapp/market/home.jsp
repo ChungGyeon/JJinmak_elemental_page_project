@@ -274,19 +274,13 @@
         </svg>
       </div>
     </div>
-<<<<<<< HEAD
-   
+
    <hr class="featurette-divider">
    <div class="text-md-end">
    <h2 class="featurette-heading fw-normal lh-1">사람을 만나는데 결제가 필요없습니다!</h2>
    <p class="lead">약간의 광고의 첨가</p>
     </div>
-=======
 
-    <hr class="featurette-divider">
-   <p> 여기에 어떤 내용 넣을지 생각해보자 테스트를 위한 커밋
->>>>>>> refs/heads/mergemaster1
-    
     <hr class="featurette-divider">
     <div class="row featurette">
     
