@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>LoveLJKC - 최우민</title>
+  <title>LoveLJKC - 백지헌</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -73,15 +73,15 @@
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
     <div class="parallax-bg" style="
-          background-image: url(cum.jpeg);
+          background-image: url(https://www.breaknews.com/imgdata/breaknews_com/202005/2020050151439533.jpg);
         " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">최우민</div>
-        <div class="subtitle" data-swiper-parallax="-200">99년생</div>
+        <div class="title" data-swiper-parallax="-300">백지헌</div>
+        <div class="subtitle" data-swiper-parallax="-200">03년생</div>
         <div class="text" data-swiper-parallax="-100">
-          <h1>최우민<br></h1>
-          <h3>생년월일 : 1999. 02. 03<br>
+          <h1>백지헌<br></h1>
+          <h3>생년월일 : 2003. 04. 07<br>
           
           </h3>
         </div>

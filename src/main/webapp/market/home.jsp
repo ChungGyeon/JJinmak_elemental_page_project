@@ -10,10 +10,8 @@
     <meta name="generator" content="Hugo 0.115.4">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       
-<!-- 잠만잠만 터미널 커밋은 잘못 건드리면 엿될거 같아  -->
-<!-- 아니정말 파일이 독립된건가?? -->
-    <title>소개팅페이지</title>
-   <!--12월1일 커밋테스트용 주석입니다 -->
+    <title>LoveLJKC</title>
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -107,7 +105,6 @@
     </style>
 
     
-    <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
    <%@ include file="./menu.jsp" %>
   </head>
@@ -148,7 +145,7 @@
       </ul>
     </div>
 
-    <!-- 광고 페이지 부 -->
+    <!-- 광고 페이지 부분 -->
 <main>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -178,9 +175,9 @@
         <div class="container">
           <div class="carousel-caption">
           
-          <div class="p-3 mb-2 bg-light text-dar" style="--bs-bg-opacity: .5;">
+          <div class="p-3 mb-2 bg-light text-dark" style="--bs-bg-opacity: .5;">
            <p class="fw-bold" style="color:black;">
-           []크리스마스에도 데이트는 역시 롯데월드]
+           크리스마스에도 데이트는 역시 롯데월드
            </p>
            </div>
            
@@ -191,13 +188,13 @@
       
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> 
-        <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation2.jsp">
-        <image width="100%" height="80%" href="./img/mainad2.jpeg" preserveAspectRatio="xMidYMax slice"/></a>
+        <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation3.jsp">
+        <image width="100%" height="100%" href="https://www.stolantern.com/_pc/img/main/_kor/banner1.webp?ver=231209-011357" preserveAspectRatio="xMidYMax slice"/></a>
         </svg>
    
         <div class="container">
           <div class="carousel-caption text-end">
-            <p>[청계천열리는 서울 빛초롱 축제 & 광화문 광장 마켓]</p>
+            <p>서울 빛초롱 축제 & 광화문 광장 마켓</p>
           </div>
         </div>
       </div>
@@ -225,7 +222,7 @@
 
 %>
 
-<!-- Three columns of text below the carousel -->
+<!-- 메인 페이지 샘플프로필 -->
  <hr class="featurette-divider">
 
 <div class="container">
@@ -265,8 +262,8 @@
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
-
     <div class="row featurette">
+    
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">마음에 드시는 분을 찾으세요!</h2>
         <p class="lead">여기에 있는 모든 분은 만남을 추구하기 위해 모여있습니다. 당신을 기다리고 있어요!</p>
@@ -277,13 +274,16 @@
         </svg>
       </div>
     </div>
-
-    <hr class="featurette-divider">
-   <p> 여기에 어떤 내용 넣을지 생각해보자 테스트를 위한 커
+   
+   <hr class="featurette-divider">
+   <div class="text-md-end">
+   <h2 class="featurette-heading fw-normal lh-1">사람을 만나는데 결제가 필요없습니다!</h2>
+   <p class="lead">약간의 광고의 첨가</p>
+    </div>
     
     <hr class="featurette-divider">
-
     <div class="row featurette">
+    
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">만날 장소는 어디가 좋을까? <span class="text-body-secondary"></span></h2>
         <p class="lead">서로의 마음을 확인한 두 분을 위해 저희가 장소를 추천해줍니다! 자신과 가까운 곳, 상대방과 가까운 곳, 아니면 서로의 중간지점에서 만날만한 멋진 장소를 알려줄게요</p>
@@ -311,7 +311,7 @@
        <h3>임재혁</h3>
        <p><br></p>
  
-       <h4>01년생, 백수지망인 희망찬 친구<br></h4>
+       <h4>01년생, 프로젝트 바지리더<br></h4>
        </div>
        </div><!-- 이미지 css적용 div -->
        

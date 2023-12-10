@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>LoveLJKC - 최우민</title>
+  <title>LoveLJKC - 침착맨</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -73,50 +73,29 @@
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
     <div class="parallax-bg" style="
-          background-image: url(cum.jpeg);
+          background-image: url(ccm1.png);
         " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">최우민</div>
-        <div class="subtitle" data-swiper-parallax="-200">99년생</div>
+        <div class="title" data-swiper-parallax="-300">유부남</div>
+        <div class="subtitle" data-swiper-parallax="-200">83년생</div>
         <div class="text" data-swiper-parallax="-100">
-          <h1>최우민<br></h1>
-          <h3>생년월일 : 1999. 02. 03<br>
+          <h1>침착맨<br></h1>
+          <h3>생년월일 : 1983. 12. 05<br>
           
           </h3>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+        <div class="title" data-swiper-parallax="-300">연예인 사진 샘플</div>
+        <div class="subtitle" data-swiper-parallax="-200">연예인 취미는 어떻게 알아</div>
         <div class="text" data-swiper-parallax="-100">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            팀원이 4명인 관계로 다른 사람의 사진을 가져올 수 밖에 없었다는 점 참고 바랍니다.
           </p>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 3</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-          </p>
-        </div>
-      </div>
-    </div>
+  </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
