@@ -77,7 +77,7 @@
 <body>
 
 <button type="button" class="btn btn-primary" onclick="location.href='./home.jsp'">뒤로 가기</button>
-
+<button type="button" class="btn btn-primary" onclick="location.href='./home.jsp'">다크모드</button>
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">

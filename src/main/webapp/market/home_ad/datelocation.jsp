@@ -182,43 +182,6 @@
         }
 	</script>
 	
-	<!-- 다크모드 유지용 쿠키 -->
-	<script>
-    const savedTheme = getCookie('theme');
 
-    setTheme(savedTheme);
-
-    function setTheme(theme) {
-        const themeStyles = document.getElementById('theme-styles');
-
-        if (theme === 'light') {
-            themeStyles.innerHTML = ':root { --bg-color: #fff; --text-color: #333; }';
-        } else if (theme === 'dark') {
-            themeStyles.innerHTML = ':root { --bg-color: #333; --text-color: #fff; }';
-        } else {
-            
-            themeStyles.innerHTML = ''; 
-        }
-
-        //쿠키 몇일 유지 할까 
-        setCookie('theme', theme, 30); // 30일 유지 
-    }
-
-    // 쿠키 맨들어 
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    }
-
-    // 셋쿠키 
-    function setCookie(name, value, days) {
-        const date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        const expires = `expires=${date.toUTCString()}`;
-        document.cookie = `${name}=${value};${expires};path=/`;
-    }
-
-</script>
 </body>
 </html>
