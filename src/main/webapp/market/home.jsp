@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
+    pageEncoding="UTF-8"%>   
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +10,8 @@
     <meta name="generator" content="Hugo 0.115.4">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       
-
+<!-- 잠만잠만 터미널 커밋은 잘못 건드리면 엿될거 같아  -->
+<!-- 아니정말 파일이 독립된건가?? -->
     <title>소개팅페이지</title>
    <!--12월1일 커밋테스트용 주석입니다 -->
     <style>
@@ -86,12 +86,30 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      
+     /* 메인페이지 프로필 정렬*/
+    .imgposition {
+    text-align: center;
+    }
+    .mainadpage {
+    top: 50px;
+    }
+    
+    .mainadpageset {
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  border: 10px solid #000;
+  width: 300px;
+  text-align: center;
+}
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-   <%@ include file="menu.jsp" %>
+   <%@ include file="./menu.jsp" %>
   </head>
   <body>
     <!-- 다크모드 -->
@@ -126,11 +144,11 @@
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
-        </li>
+        </li> 
       </ul>
     </div>
 
-    
+    <!-- 광고 페이지 부 -->
 <main>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -142,7 +160,7 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- 만약 사진클릭시 안넘어간다면 이 주소가 문제일거야                     -->
-        <a href="http://localhost:8080/jeongwon2-b/market/datelocation.jsp"><image width="100%" height="100%" href="mainad1.png" preserveAspectRatio="xMidYMax slice"/>
+        <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation.jsp"><image width="100%" height="100%" href="./img/mainad1.png" preserveAspectRatio="xMidYMax slice"/>
         </a></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -152,22 +170,34 @@
           </div>
         </div>
       </div>
+        
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+       <svg class="bd-placeholder-img" width="100%" height="170%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+         <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation2.jsp"><image width="100%" height="80%" href="./img/mainad2.jpeg" preserveAspectRatio="xMidYMax slice"/>
+        </a></svg>
         <div class="container">
           <div class="carousel-caption">
-            
-
-            <p>설명2</p>
+          
+          <div class="p-3 mb-2 bg-light text-dar" style="--bs-bg-opacity: .5;">
+           <p class="fw-bold" style="color:black;">
+           []크리스마스에도 데이트는 역시 롯데월드]
+           </p>
+           </div>
+           
           </div>
         </div>
       </div>
+      
+      
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> 
+        <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation2.jsp">
+        <image width="100%" height="80%" href="./img/mainad2.jpeg" preserveAspectRatio="xMidYMax slice"/></a>
+        </svg>
+   
         <div class="container">
           <div class="carousel-caption text-end">
-            
-            <p>설명3</p>
+            <p>[청계천열리는 서울 빛초롱 축제 & 광화문 광장 마켓]</p>
           </div>
         </div>
       </div>
@@ -181,56 +211,53 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  
+<!-- 버튼 구현부 -->
 <%
 
 	if(session.getAttribute("user_id")==null){
 		out.println("<div class='d-grid gap-2 col-6 mx-auto' style='text-align: center; height: 40px; width: 500px; background-color: #0d6efd; border-radius: 10px'>");
-		out.println("<a style='text-decoration-line: none; color: white; margin-top: 7px; font-size: 17px;' href='loginForm.jsp'>로그인 후 이용해주세요</a></button></div>");
+		out.println("<a style='text-decoration-line: none; color: white; margin-top: 7px; font-size: 17px;' href='./loginForm.jsp'>로그인 후 이용해주세요</a></button></div>");
+		
 	}else{
-		out.println("<div class='d-grid gap-2 col-6 mx-auto'>");
-		out.println("<button type='button' class='btn btn-primary' onClick='location.href='findprofile.jsp''>사람을 찾으러 떠나볼까요?</button></div>");
+		out.println("<div class='d-grid gap-2 col-6 mx-auto' style='text-align: center; height: 40px; width: 600px;'><a href='./findprofile.jsp'><button type='button' class='btn btn-outline-danger' style='background-color: #fd9bcb; width: 600px;' >사람을 찾으러 떠나볼까요?</button></a></div>");
 	}
 
 %>
-<!--  
-  <div class="d-grid gap-2 col-6 mx-auto">
-  	<button type="button" class="btn btn-primary" onclick="loginCk">사람을 찾으러 떠나볼까요?</button>
-  </div>
--->
+
 <!-- Three columns of text below the carousel -->
  <hr class="featurette-divider">
 
 <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">임재혁</h2>
         <p>01 솔로라이더</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil1">자세히
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil1" style="background-color: #fd9bcb;">자세히
         </button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjVfNzQg/MDAxNTQwNDcyNDY0MjU5.ObVghi3tzyF_ilwHeVO4qs0KXooGgqNmztkQtOkm8VEg.ynHbfUA-NwU11LdesL0jV66haI71WMjdSTjRM275UBQg.JPEG.jnway37/8--.jpg?type=w800" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/kyy.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">김의연</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil2">여기가 모달</button>
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil2" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/jgh.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">전관호</h2>
-        <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil3">여기가 모달</button>
+        <p>안녕하세요 01년생 전관호입니다!</p>
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil3" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="https://www.behindpress.com/news/photo/202206/18712_31439_187.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/cum2.jpg" width="130%" height="120%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">최우민</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil4">여기가 모달</button>
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil4" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
     </div><!-- /.row -->
 <!--  </div>-->
@@ -246,7 +273,7 @@
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/>
-        <image href="mailpageimage1.png" width="100%" height="100%" preserveAspectRatio="xMidYMax slice"/>
+        <image href="./img/mailpageimage1.png" width="100%" height="100%" preserveAspectRatio="xMidYMax slice"/>
         </svg>
       </div>
     </div>
@@ -274,11 +301,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="LJH.jpg" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/LJH.jpg" alt="시메지로 임시등록"  width="460" height="400">
     
       <div class="container text-center">
        <h3>임재혁</h3>
@@ -286,12 +313,12 @@
  
        <h4>01년생, 백수지망인 희망찬 친구<br></h4>
        </div>
-       
+       </div><!-- 이미지 css적용 div -->
        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary" onClick="location.href='swipetest.jsp'">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/ljh_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -302,23 +329,26 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjVfNzQg/MDAxNTQwNDcyNDY0MjU5.ObVghi3tzyF_ilwHeVO4qs0KXooGgqNmztkQtOkm8VEg.ynHbfUA-NwU11LdesL0jV66haI71WMjdSTjRM275UBQg.JPEG.jnway37/8--.jpg?type=w800" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/kyy.png" alt="시메지로 임시등록" width="460" height="400">
+      </div>
        <div class="container text-center">
        <h3>김의연</h3>
        <p><br></p>
 
-       <h4>00년생, 열혈공부중<br></h4>
+       <h4>인천 살고있는 22살 김의연입니다:)<br>
+       생년월일 : 2000. 11. 28<br>
+       MBTI : INTP<br></h4>
        </div>
        
        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/kyy_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -328,23 +358,24 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/jgh.png" alt="시메지로 임시등록" width="460" height="400">
+      </div>
        <div class="container text-center">
        <h3>전관호</h3>
        <p><br></p>
-
-       <h4>01년생, 지능 만렙<br></h4>
+		
+       <h4>안녕하세요! 인천에서 살고있는 23살 전관호입니다<br></h4>
        </div>
        
        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/jgh_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -354,11 +385,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="https://www.behindpress.com/news/photo/202206/18712_31439_187.jpg" alt="시메지로 임시등록" width="250" height="400">
+      <div class="imgposition">
+      <img src="./img/cum2.jpg" alt="시메지로 임시등록" width="460" height="400">
+      </div>
        <div class="container text-center">
        <h3>최우민</h3>
        <p><br></p>
@@ -369,7 +401,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary">자세히(구현예정)</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='./profile_all/cum_profile.jsp'">자세히</button>
       </div>
     </div>
   </div>
@@ -383,7 +415,7 @@
   <!-- /.container -->
 </div>
 </main>
-	<%@ include file="footer.jsp" %>
+	<%@ include file="./footer.jsp" %>
 
 	<script type="text/javascript">
 		function loginCk() {

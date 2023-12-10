@@ -115,7 +115,11 @@
         <div class="container">
             
         <!-- 컨텐츠 시작 -->
-        
+        <div class="card mb-4 mx-auto d-flex align-items-center" style="width: 700px; height: 500px; background-color: #86b7fe59; color: white;">
+        	
+        	<h1 class="fw-bolder" style="margin-top: 200px;"><a class='nav-link' href='loginForm.jsp' style="text-decoration-line: none;">로그인 하러가기</a></h1>
+        	
+        </div>
         	
         <!-- 컨텐츠 끝 -->
             
