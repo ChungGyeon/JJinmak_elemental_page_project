@@ -78,7 +78,6 @@
 	        		<form id="login-form" action="login_check.jsp" method="post" onsubmit="return formCheck(this)">
 	        			<input type="text" id="id" name="mid" placeholder="id">
 	        			<input type="text" id="password" name="mpw" placeholder="password">
-	        			<input type="checkbox" id="check">아이디 저장
 	        			<input type="submit" id="btn" value="로그인">
 	        		</form>
         		</div>

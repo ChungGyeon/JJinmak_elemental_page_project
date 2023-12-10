@@ -227,7 +227,7 @@
 
 <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">임재혁</h2>
@@ -235,21 +235,21 @@
         <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil1" style="background-color: #fd9bcb;">자세히
         </button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/kyy.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">김의연</h2>
         <p>한줄소개</p>
         <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil2" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        <image href="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
+        <image href="./img/jgh.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">전관호</h2>
-        <p>한줄소개</p>
+        <p>안녕하세요 01년생 전관호입니다!</p>
         <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil3" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
-      <div class="col-lg-3">
+      <div class="col-lg-3 text-center">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/cum2.jpg" width="130%" height="120%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">최우민</h2>
@@ -274,13 +274,13 @@
         </svg>
       </div>
     </div>
-   
+
    <hr class="featurette-divider">
    <div class="text-md-end">
    <h2 class="featurette-heading fw-normal lh-1">사람을 만나는데 결제가 필요없습니다!</h2>
    <p class="lead">약간의 광고의 첨가</p>
     </div>
-    
+
     <hr class="featurette-divider">
     <div class="row featurette">
     
@@ -362,13 +362,13 @@
       </div>
       <div class="modal-body">
       <div class="imgposition">
-      <img src="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" alt="시메지로 임시등록" width="460" height="400">
+      <img src="./img/jgh.png" alt="시메지로 임시등록" width="460" height="400">
       </div>
        <div class="container text-center">
        <h3>전관호</h3>
        <p><br></p>
-
-       <h4>01년생, 지능 만렙<br></h4>
+		
+       <h4>안녕하세요! 인천에서 살고있는 23살 전관호입니다<br></h4>
        </div>
        
        

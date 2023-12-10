@@ -72,16 +72,15 @@
   <!-- Swiper -->
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-    <div class="parallax-bg" style="
-          background-image: url(https://pbs.twimg.com/media/EwGD1RGVoAIJCjh.jpg);
-        " data-swiper-parallax="-23%"></div>
+     <div class="parallax-bg" style="
+          background-image: url(jgh_back.jpg);" data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="title" data-swiper-parallax="-300">전관호</div>
         <div class="subtitle" data-swiper-parallax="-200">01년생</div>
         <div class="text" data-swiper-parallax="-100">
           <h1>전관호<br></h1>
-          <h3>생년월일 : 2001. 02. 03<br>
+          <h3>생년월일 : 2001. 11. 09<br>
           
           </h3>
         </div>

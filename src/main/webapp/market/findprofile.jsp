@@ -16,7 +16,7 @@
   <!-- Demo styles -->
   <style>
     html,
-    body {
+    body {  
       position: relative;
       height: 100%;
     }
