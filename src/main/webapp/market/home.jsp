@@ -152,7 +152,7 @@
       </ul>
     </div>
 
-    
+    <!-- 광고 페이지 부 -->
 <main>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -184,7 +184,7 @@
           
           <div class="p-3 mb-2 bg-light text-dar" style="--bs-bg-opacity: .5;">
            <p class="fw-bold" style="color:black;">
-           크리스마스에도 데이트는 역시 롯데월드
+           []크리스마스에도 데이트는 역시 롯데월드]
            </p>
            </div>
            
@@ -194,11 +194,14 @@
       
       
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> 
+        <a href="http://localhost:8080/jeongwon2-b/market/home_ad/datelocation2.jsp">
+        <image width="100%" height="80%" href="./img/mainad2.jpeg" preserveAspectRatio="xMidYMax slice"/></a>
+        </svg>
    
         <div class="container">
           <div class="carousel-caption text-end">
-            <p>설명3</p>
+            <p>[청계천열리는 서울 빛초롱 축제 & 광화문 광장 마켓]</p>
           </div>
         </div>
       </div>
@@ -212,8 +215,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
- 
-  <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-primary" onClick="location.href='findprofile.jsp'">사람을 찾으러 떠나볼까요?</button></div>
+
+  <div class="d-grid gap-2 col-6 mx-auto"><button type="button" class="btn btn-outline-danger" onClick="location.href='findprofile.jsp'" style="background-color: #fd9bcb;">사람을 찾으러 떠나볼까요? </button></div>
 <!-- Three columns of text below the carousel -->
  <hr class="featurette-divider">
 
@@ -224,7 +227,7 @@
         <image href="./img/LJH.jpg" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">임재혁</h2>
         <p>01 솔로라이더</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil1">자세히
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil1" style="background-color: #fd9bcb;">자세히
         </button>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
@@ -232,21 +235,21 @@
         <image href="./img/kyy.png" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">김의연</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil2">자세히</button>
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil2" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="https://image.blip.kr/v1/file/345df8a080e8b85a099da827f4855c9a" width="100%" height="140%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">전관호</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil3">자세히</button>
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil3" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
         <image href="./img/cum2.jpg" width="130%" height="120%" preserveAspectRatio="xMidYMax slice"/></svg>
         <h2 class="fw-normal">최우민</h2>
         <p>한줄소개</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Profil4">자세히</button>
+        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Profil4" style="background-color: #fd9bcb;">자세히</button>
       </div><!-- /.col-lg-3 -->
     </div><!-- /.row -->
 <!--  </div>-->

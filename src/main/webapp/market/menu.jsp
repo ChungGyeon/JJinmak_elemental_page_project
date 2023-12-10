@@ -16,7 +16,7 @@
 <body>
 <!--다크모드 구현할때 아래 테마 dark로 하면  -->
 	<header data-bs-theme="light">
-	  <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #fcb8d9">
+	  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #fcb8d9">
 	    <div class="container-fluid">
 	      <a class="navbar-brand" href="home.jsp">LoveJHKC</a>
 	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
