@@ -43,7 +43,7 @@
     .parallax-bg {
       position: absolute;
       left: 0;
-      width: 100%;
+      width: 150%;
       height: 100%;
       -webkit-background-size: cover;
       background-size: cover;
@@ -72,7 +72,7 @@
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
     <div class="parallax-bg" style="
-          background-image: url(kyy2.png);
+          background-image: url(kyy3.jpeg);
         " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
