@@ -62,7 +62,7 @@
 			   cookie.setMaxAge(60);
 			   cookie.setPath("/");
 			   response.addCookie(cookie);
-			%>
+			%> 
 				<script type="text/javascript">
 					alert("로그인 성공");
 					location.href='login_succes.jsp';
