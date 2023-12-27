@@ -86,36 +86,15 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+        <div class="title" data-swiper-parallax="-300">이상형은 어떻게 되시나요?</div>
+        <div class="subtitle" data-swiper-parallax="-200">모든 여성</div>
         <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          <p> 
+          모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성모든 여성
           </p>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 3</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-          </p>
-        </div>
-      </div>
-    </div>
+
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>

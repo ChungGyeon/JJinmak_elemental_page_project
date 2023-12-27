@@ -80,8 +80,6 @@
         <div class="subtitle" data-swiper-parallax="-200">00년생</div>
         <div class="text" data-swiper-parallax="-100">
           <p>
-          <h1>인천 살고있는 22살 김의연입니다:)<br></h1>
-          <h3>생년월일 : 2000. 11. 28<br>
           학력 : 인하공전 정보통신과 재학중<br>
           병역 여부 : 제 6보병사단 병장 만기전역<br>
           MBTI : INTP<br>

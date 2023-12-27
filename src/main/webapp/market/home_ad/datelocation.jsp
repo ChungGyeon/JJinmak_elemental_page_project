@@ -2,7 +2,7 @@
     pageEncoding="utf-8"%>
     
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light">
   <head>
   <script src="../assets/js/color-modes.js"></script>
 
@@ -19,7 +19,7 @@
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
-        -moz-user-select: none;
+        -moz-user-select: none; 
         user-select: none;
       }
 
@@ -95,7 +95,8 @@
   </head>
   <body>
     <!-- 다크모드 -->
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+   <!-- 다크모드 근데 왜 작동을 안한느거야 -->
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
@@ -107,26 +108,21 @@
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+          <button id="darkModeLight" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true" onclick="darkMode()">
             Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+          <button id="darkModeDark" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" onclick="darkMode()">
             Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="false">
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
-        </li>
+        </li> 
       </ul>
     </div>
 
@@ -136,22 +132,64 @@
 
 <!-- 어떻게 꾸며야 하 -->
 <div class="container text-center">
- <h1> 이렇게 제목을 박아넣고!</h1>
- <p>크리스마스 데이트 코스 추천<br>
+ <h1> 1</h1>
+  <hr class="featurette-divider">
+ <h1>크리스마스 데이트 코스 추천</h1><br>
+  <hr class="featurette-divider">
+ <img src="../img/magazine1.png"/><p class="fs-2">
+ <hr class="featurette-divider">
+<p class="fs-2">현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다.<br>
+ 올해에도 역시 더 현대 서울에서 크리스마스를 더욱 즐겁게 보낼 수 있도록 이벤트를 준비하였는데요, 바로 ‘해리의 꿈의 상점’입니다! <br></p>
+  <hr class="featurette-divider">
+ <img src="../img/magazine2.png"/><br>
+  <hr class="featurette-divider">
+ <p class="fs-2">수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?<br>
  
-현재 대한민국에서 가장 핫한 장소를 꼽으라면 더 현대 서울을 빼놓을 수 없을 것입니다. 올해에도 역시 더 현대 서울에서 크리스마스를 더욱 즐겁게 보낼 수 있도록 이벤트를 준비하였는데요, 바로 ‘해리의 꿈의 상점’입니다! 수많은 트리와 조명들이 수 놓은 거리에서 올 겨울 연인과 함께 추억을 만들어 보는건 어떠실까요?
- 
-이용시간: 월-목:10:00~20:00 / 금-일:10:00~20:30
-오시는길: 5호선 여의나루역 이용
- 
-#크리스마스 #더현대서울 #서울데이트장소
-<img src="../img/magazine1.png"/>
-<img src="../img/magazine2.png"/>
+이용시간: 월-목:10:00~20:00 / 금-일:10:00~20:30<br>
+오시는길: 5호선 여의나루역 이용<br>
+
+#크리스마스 #더현대서울 #서울데이트장소</p>
+ <hr class="featurette-divider">
+
 <img src="../img/magazine3.png"/>
- <p>
+ <hr class="featurette-divider">
 </div>
 
 </main>
 	<%@ include file="../footer.jsp" %>
+	
+	<!-- 다크모드 스크립트  -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script type="text/javascript">
+		function loginCk() {
+			console.log('확인');
+			if(session.getAttribute("user_id")==null){
+				alert("로그인 후 이용가능합니다!");
+				location.href='loginForm.jsp';
+			}else{
+				location.href='findprofile.jsp';
+			}
+		}
+		
+		
+		function darkMode() {
+            // 현재 모드를 가져옴
+            let mode = $('html').attr("data-bs-theme");
+
+            // 현재 모드와 반대되는 모드로 설정
+            if (mode == 'dark') {
+                $('html').attr("data-bs-theme", "light");
+                $('.mode-change-btn').html('다크모드');
+            } else {
+                $('html').attr("data-bs-theme", "dark");
+                $('.mode-change-btn').html('라이트모드');
+            }
+        }
+	</script>
+	
+
 </body>
 </html>

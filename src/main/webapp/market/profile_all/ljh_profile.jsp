@@ -77,41 +77,32 @@
         " data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">임재혁</div>
-        <div class="subtitle" data-swiper-parallax="-200">01년생</div>
+        <div class="title" data-swiper-parallax="-300" style="color:black;">임재혁</div>
+        <div class="subtitle" data-swiper-parallax="-200" style="color:black;">01년생</div>
         <div class="text" data-swiper-parallax="-100">
-          <h1>임재혁<br></h1>
-          <h3>생년월일 : 2001. 02. 03<br>
+          <h2 class="fw-bold" style="color:black;">나는 나야</h2>
           
-          </h3>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">취미는 어떤건가요?</div>
-        <div class="subtitle" data-swiper-parallax="-200">라이딩?</div>
-        <div class="text" data-swiper-parallax="-100">
+        <div class="title" data-swiper-parallax="-300" style="color:black;">취미는 어떤건가요?</div>
+        <div class="subtitle" data-swiper-parallax="-200" style="color:black;">라이딩?</div>
+        <div class="text" data-swiper-parallax="-100" style="color:black;">
           <p>
             옛날부터 차를 타고 여행하는 걸 좋아했는데, 어릴때는 차를 몰수 없으니 자전거로 이곳저곳 다니다보니 자전거 타는걸 좋아하게 된거 같아요<br>
             이러면 여행을 좋아한다고 해야하나?
           </p>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 3</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-        <div class="text" data-swiper-parallax="-100">
+      <div class="swiper-slide" >
+        <div class="title" data-swiper-parallax="-300" style="color:black;">이상형은 어떻게 되시나요? </div>
+        <div class="subtitle" data-swiper-parallax="-200" style="color:black;">골대는 넓은 편</div>
+        <div class="text" data-swiper-parallax="-100"style="color:black;">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            나이가 적은 분이 더 어른스러운 분도 있고, 나이가 많으신 분이 더 어린 분도 있고, 사람마다 제각각이기에 저는 저랑 취미가 맞는 분들이라면 잘 어울린다고 생각합니다. 
           </p>
         </div>
-      </div>
-    </div>
+        </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
