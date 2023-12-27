@@ -62,6 +62,18 @@
 </head>
 
 <body>
+
+<%
+Cookie[] cookies = request.getCookies();
+if(cookies != null){
+    for(Cookie cookie : cookies){
+        if(cookie.getName().equals("id")){
+            session.setAttribute("user_id", cookie.getValue());
+             id = (String)session.getAttribute("user_id");
+        }
+    }
+}
+%>
 		<header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">

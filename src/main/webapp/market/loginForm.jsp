@@ -55,8 +55,20 @@
 	<%@ include file="menu.jsp" %>
 </head>
 <body>
-	
-
+<%
+Cookie[] cookies = request.getCookies();
+if(cookies != null ){
+    for(Cookie cookie : cookies){
+        if(cookie.getName().equals("id")){
+            /* 실행흐름이 서버에 있을 경우 서버코드로써 강제이동
+                   서버에서 클라이언트()에게 특정페이지로 이동하는 정보만 응답으로 준다.
+               java코드로 페이지 이동 -> sendRedirect("url");
+            */
+            response.sendRedirect("home.jsp");
+        }
+    }
+}
+%>
 		<header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">

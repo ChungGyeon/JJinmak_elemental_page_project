@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>   
 <!DOCTYPE html>
 <html data-bs-theme="light">
+<%String id = (String)session.getAttribute("user_id"); %>
   <head>
 
     <meta charset="utf-8">
@@ -163,6 +164,19 @@
 
     <!-- 광고 페이지 부분 -->
 <main>
+
+<%
+
+Cookie[] cookies = request.getCookies();
+if(cookies != null){
+    for(Cookie cookie : cookies){
+        if(cookie.getName().equals("id")){
+            session.setAttribute("user_id", cookie.getValue());
+             id = (String)session.getAttribute("user_id");
+        }
+    }
+}
+%>
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

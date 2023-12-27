@@ -19,7 +19,7 @@
 
 	<%
 	request.setCharacterEncoding("UTF-8");
-
+    
 	String mid = request.getParameter("mid");
     String mpw = request.getParameter("mpw");
 
@@ -33,6 +33,8 @@
 	
 	String sql = "SELECT * FROM members WHERE mid=? AND mpw=?";
 	
+    
+    
 	try{
 		// 드라이버 호출
 		Class.forName("com.mysql.jdbc.Driver");
@@ -51,15 +53,22 @@
 		if(rs.next()){ // 로그인 성공(인증의 수단 session)
 			mid = rs.getString("mid");
 			String mname = rs.getString("mname");
-		
+			String id;
+			   
 			session.setAttribute("user_id", mid);
 			session.setAttribute("user_name", mname);
 			
+			   Cookie cookie = new Cookie("id", mid);
+			   cookie.setMaxAge(60);
+			   cookie.setPath("/");
+			   response.addCookie(cookie);
 			%>
 				<script type="text/javascript">
 					alert("로그인 성공");
 					location.href='login_succes.jsp';
 				</script>
+			   
+              
 			<%
 			//response.sendRedirect("login_succes.jsp"); // 페이지이동
 		} else{ // 로그인 실패
@@ -73,7 +82,7 @@
 		}
 	} catch(Exception e){
 		e.printStackTrace();
-		response.sendRedirect("loginForm.jsp"); // 에러가 난 경우도 리다이렉트
+		
 	} finally{
 		try{
 			if(conn != null) conn.close();
@@ -83,7 +92,10 @@
 			e.printStackTrace();
 		}
 	}
+	
  %>
+ 
+ 
 	
 	
 	
